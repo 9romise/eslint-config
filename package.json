@@ -35,7 +35,7 @@
     "build": "tsup",
     "release": "bumpp && pnpm publish",
     "typecheck": "tsc --noEmit",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
