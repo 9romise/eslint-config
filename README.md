@@ -1,6 +1,6 @@
-# @vida/eslint-config
+# @vida0905/eslint-config
 
- [![npm](https://img.shields.io/npm/v/@vida/eslint-config.svg)](https://npmjs.com/package/@vida/eslint-config)
+ [![npm](https://img.shields.io/npm/v/@vida0905/eslint-config.svg)](https://npmjs.com/package/@vida0905/eslint-config)
 
 Self use eslint config, extends [antfu's config](https://github.com/antfu/eslint-config)
 
@@ -18,7 +18,7 @@ npm i -D @vida/eslint-config
 in `eslint.config.js`
 
 ```js
-import { vida } from '@vida/eslint-config';
+import { vida } from '@vida0905/eslint-config';
 
 export default vida();
 ```
