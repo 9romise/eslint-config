@@ -1,7 +1,7 @@
 {
   "name": "@vida0905/eslint-config",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packageManager": "pnpm@8.15.6",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
@@ -34,7 +34,8 @@
     "dev": "npx @eslint/config-inspector",
     "build": "tsup",
     "release": "bumpp && pnpm publish",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublish": "npm run build"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
