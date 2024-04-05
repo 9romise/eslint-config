@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "paths": {
+      "eslint-flat-config-utils": ["node_modules/eslint-flat-config-utils"]
+    },
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
