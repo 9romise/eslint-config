@@ -3,7 +3,7 @@ import pluginPinia from 'eslint-plugin-pinia';
 
 export const pinia: TypedFlatConfigItem[] = [
   {
-    name: 'vida:pinia',
+    name: 'vida/pinia',
     files: [GLOB_JS, GLOB_TS],
     plugins: {
       pinia: pluginPinia,
