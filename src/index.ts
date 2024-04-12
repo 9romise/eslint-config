@@ -1,7 +1,7 @@
 import antfu from '@antfu/eslint-config';
 import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config';
 import { isPackageExists } from 'local-pkg';
-import type { OptionsConfig } from './types';
+import type { AntfuOptions, OptionsConfig } from './types';
 import { pinia, vue } from './configs';
 
 const VuePackages = [
@@ -26,7 +26,7 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
   if (enablePinia)
     configs.push(pinia);
 
-  const antfuConfig: Parameters<typeof antfu>[0] = {
+  const antfuConfig: AntfuOptions = {
     stylistic: {
       indent: 2,
       quotes: 'single',

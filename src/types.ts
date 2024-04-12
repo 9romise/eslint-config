@@ -1,6 +1,6 @@
 import type { antfu } from '@antfu/eslint-config';
 
-type AntfuOptions = Parameters<typeof antfu>[0];
+export type AntfuOptions = Parameters<typeof antfu>[0];
 
 export type OptionsConfig = AntfuOptions & {
   /**
