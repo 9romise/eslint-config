@@ -2,26 +2,15 @@ import antfu from '@antfu/eslint-config';
 import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config';
 import { isPackageExists } from 'local-pkg';
 import type { AntfuOptions, OptionsConfig } from './types';
-import { pinia, vue } from './configs';
-
-const VuePackages = [
-  'vue',
-  'nuxt',
-  'vitepress',
-  '@slidev/cli',
-];
+import { pinia } from './configs';
+import { vue as overridesVue } from './overrides';
 
 export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfigItem[]) {
   const {
     pinia: enablePinia = isPackageExists('pinia'),
-    // https://github.com/antfu/eslint-config/blob/main/src/factory.ts
-    vue: enableVue = VuePackages.some(i => isPackageExists(i)),
   } = options;
 
   const configs: Awaitable<TypedFlatConfigItem[]>[] = [];
-
-  if (enableVue)
-    configs.push(vue);
 
   if (enablePinia)
     configs.push(pinia);
@@ -35,6 +24,9 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
     formatters: {
       css: true,
       html: true,
+    },
+    vue: {
+      overrides: overridesVue,
     },
     jsx: false,
   };
