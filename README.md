@@ -1,6 +1,6 @@
 # @vida0905/eslint-config
 
- [![npm](https://img.shields.io/npm/v/@vida0905/eslint-config.svg)](https://npmjs.com/package/@vida0905/eslint-config)
+ [![npm](https://img.shields.io/npm/v/@vida0905/eslint-config.svg?color=444&label=)](https://npmjs.com/package/@vida0905/eslint-config) [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
 
 Self use eslint config, extends [antfu's config](https://github.com/antfu/eslint-config)
 
@@ -51,7 +51,12 @@ in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.c
     "markdown",
     "json",
     "jsonc",
-    "yaml"
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro"
   ]
 }
 ```
