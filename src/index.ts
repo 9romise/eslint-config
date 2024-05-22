@@ -24,10 +24,7 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
       quotes: 'single',
       semi: true,
     },
-    formatters: {
-      css: true,
-      html: true,
-    },
+    formatters: false,
     javascript: {
       overrides: overridesJavascript,
     },
