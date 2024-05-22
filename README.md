@@ -8,6 +8,8 @@ Self use eslint config, extends [antfu's config](https://github.com/antfu/eslint
 
 - More stricter rules.
 - Support `pinia`.
+- Set `semi` to `true`
+- Disable `formatter` and `jsx`
 
 ### Setup
 
