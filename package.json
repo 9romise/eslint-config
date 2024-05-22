@@ -33,7 +33,7 @@
     "lint:fix": "eslint . --fix",
     "dev": "npx @eslint/config-inspector",
     "build": "tsup",
-    "release": "bumpp && pnpm publish",
+    "release": "npm run lint && npm run typecheck && bumpp",
     "typecheck": "tsc --noEmit",
     "prepublish": "npm run build"
   },
