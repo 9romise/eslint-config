@@ -23,8 +23,10 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
       indent: 2,
       quotes: 'single',
       semi: true,
+      overrides: {
+        'style/arrow-parens': ['error', 'always'],
+      },
     },
-    formatters: false,
     javascript: {
       overrides: overridesJavascript,
     },

@@ -31,7 +31,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "dev": "npx @eslint/config-inspector",
+    "dev": "tsup --watch",
+    "inspect": "npx @eslint/config-inspector",
     "build": "tsup",
     "release": "npm run lint && npm run typecheck && bumpp",
     "typecheck": "tsc --noEmit",
