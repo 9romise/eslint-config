@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16]
+        node-version: [lts/*]
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v3
         with:
           version: 8
-      - name: Use Node.js v${{ matrix.node-version }}
+      - name: Set Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
