@@ -46,4 +46,5 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
   );
 }
 
+export * from '@antfu/eslint-config';
 export default vida;
