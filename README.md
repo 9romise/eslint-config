@@ -27,9 +27,10 @@ export default vida();
 
 in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.com/antfu/eslint-config?tab=readme-ov-file#vs-code-support-auto-fix-on-save)
 
-```json
+```jsonc
 {
   // Enable the ESlint flat config support
+  // (remove this if your ESLint extension above v3.0.5)
   "eslint.experimental.useFlatConfig": true,
 
   // Disable the default formatter, use eslint instead
@@ -41,6 +42,20 @@ in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.c
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "format/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
 
   // Enable eslint for all supported languages
   "eslint.validate": [
@@ -58,7 +73,12 @@ in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.c
     "xml",
     "gql",
     "graphql",
-    "astro"
+    "astro",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ]
 }
 ```
