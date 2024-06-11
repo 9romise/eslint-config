@@ -22,9 +22,10 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
     stylistic: {
       indent: 2,
       quotes: 'single',
-      semi: true,
+      semi: false,
       overrides: {
         'style/arrow-parens': ['error', 'always'],
+        'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
       },
     },
     javascript: {
