@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "0.2.0",
-  "packageManager": "pnpm@9.1.2",
+  "packageManager": "pnpm@9.4.0",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
@@ -36,18 +36,40 @@
     "build": "tsup",
     "release": "npm run lint && npm run typecheck && bumpp",
     "typecheck": "tsc --noEmit",
-    "prepublish": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "simple-git-hooks"
+  },
+  "peerDependencies": {
+    "@unocss/eslint-plugin": ">=0.50.0",
+    "eslint": ">=8.40.0",
+    "eslint-plugin-format": ">=0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@unocss/eslint-plugin": {
+      "optional": true
+    },
+    "eslint-plugin-format": {
+      "optional": true
+    }
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.18.1",
+    "@antfu/eslint-config": "^2.21.1",
     "eslint-plugin-pinia": "^0.1.13",
     "local-pkg": "^0.5.0"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.0",
     "bumpp": "^9.4.1",
-    "eslint": "^9.3.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "eslint": "^9.5.0",
+    "lint-staged": "^15.2.7",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
