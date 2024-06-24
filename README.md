@@ -8,7 +8,7 @@ Self use eslint config, extends [antfu's config](https://github.com/antfu/eslint
 
 - More stricter rules.
 - Support `pinia`.
-- Disable `formatter` and `jsx`
+- Disable `jsx` by default.
 
 ### Setup
 
