@@ -1,22 +1,22 @@
-import antfu from '@antfu/eslint-config';
-import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config';
-import { isPackageExists } from 'local-pkg';
-import type { AntfuOptions, OptionsConfig } from './types';
-import { pinia } from './configs';
+import antfu from '@antfu/eslint-config'
+import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config'
+import { isPackageExists } from 'local-pkg'
+import type { AntfuOptions, OptionsConfig } from './types'
+import { pinia } from './configs'
 import {
   javascript as overridesJavascript,
   vue as overridesVue,
-} from './overrides';
+} from './overrides'
 
-export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfigItem[]) {
+export function vida(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]) {
   const {
     pinia: enablePinia = isPackageExists('pinia'),
-  } = options;
+  } = options
 
-  const configs: Awaitable<TypedFlatConfigItem[]>[] = [];
+  const configs: Awaitable<TypedFlatConfigItem[]>[] = []
 
   if (enablePinia)
-    configs.push(pinia);
+    configs.push(pinia)
 
   const antfuConfig: AntfuOptions = {
     stylistic: {
@@ -35,7 +35,7 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
       overrides: overridesVue,
     },
     jsx: false,
-  };
+  }
 
   return antfu(
     {
@@ -44,8 +44,8 @@ export function vida(options: OptionsConfig = {}, ...userConfigs: TypedFlatConfi
     },
     ...configs,
     ...userConfigs,
-  );
+  )
 }
 
-export * from '@antfu/eslint-config';
-export default vida;
+export * from '@antfu/eslint-config'
+export default vida

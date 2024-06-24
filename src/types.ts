@@ -1,6 +1,6 @@
-import type { antfu } from '@antfu/eslint-config';
+import type { antfu } from '@antfu/eslint-config'
 
-export type AntfuOptions = Parameters<typeof antfu>[0];
+export type AntfuOptions = Parameters<typeof antfu>[0]
 
 export type OptionsConfig = AntfuOptions & {
   /**
@@ -8,5 +8,5 @@ export type OptionsConfig = AntfuOptions & {
    *
    * @default auto-detect based on the dependencies
    */
-  pinia?: boolean;
-};
+  pinia?: boolean
+}

@@ -1,8 +1,8 @@
-import { GLOB_JS, GLOB_TS, type TypedFlatConfigItem } from '@antfu/eslint-config';
-import pluginPinia from 'eslint-plugin-pinia';
+import { GLOB_JS, GLOB_TS, type TypedFlatConfigItem } from '@antfu/eslint-config'
+import pluginPinia from 'eslint-plugin-pinia'
 
-const GLOB_PINIA_JS = `stores/${GLOB_JS}`;
-const GLOB_PINIA_TS = `stores/${GLOB_TS}`;
+const GLOB_PINIA_JS = `stores/${GLOB_JS}`
+const GLOB_PINIA_TS = `stores/${GLOB_TS}`
 
 export const pinia: TypedFlatConfigItem[] = [
   {
@@ -21,4 +21,4 @@ export const pinia: TypedFlatConfigItem[] = [
       'pinia/no-duplicate-store-ids': ['error'],
     },
   },
-];
+]

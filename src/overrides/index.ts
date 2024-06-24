@@ -1,2 +1,2 @@
-export * from './javascript';
-export * from './vue';
+export * from './javascript'
+export * from './vue'

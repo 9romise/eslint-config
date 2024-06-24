@@ -19,9 +19,9 @@ npm i -D @vida/eslint-config
 in `eslint.config.js`
 
 ```js
-import { vida } from '@vida0905/eslint-config';
+import { vida } from '@vida0905/eslint-config'
 
-export default vida();
+export default vida()
 ```
 
 in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.com/antfu/eslint-config?tab=readme-ov-file#vs-code-support-auto-fix-on-save)
