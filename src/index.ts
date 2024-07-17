@@ -29,7 +29,9 @@ export function vida(options: OptionsConfig & TypedFlatConfigItem = {}, ...userC
     vue: {
       overrides: overrides.vue,
     },
-    jsx: false,
+    settings: {
+      'import-x/resolver': 'oxc',
+    },
   }
 
   return antfu(
