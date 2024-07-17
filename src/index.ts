@@ -1,4 +1,4 @@
-import antfu from '@antfu/eslint-config'
+import antfu, { resolveSubOptions } from '@antfu/eslint-config'
 import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config'
 import { isPackageExists } from 'local-pkg'
 import type { AntfuOptions, OptionsConfig } from './types'
@@ -16,7 +16,8 @@ export function vida(options: OptionsConfig & TypedFlatConfigItem = {}, ...userC
   const configs: Awaitable<TypedFlatConfigItem[]>[] = []
 
   if (enablePinia)
-    configs.push(pinia)
+    // @ts-expect-error safe type
+    configs.push(pinia(resolveSubOptions(options, 'pinia')))
 
   const antfuConfig: AntfuOptions = {
     stylistic: {
