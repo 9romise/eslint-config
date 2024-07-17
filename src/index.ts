@@ -3,10 +3,7 @@ import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config'
 import { isPackageExists } from 'local-pkg'
 import type { AntfuOptions, OptionsConfig } from './types'
 import { pinia } from './configs'
-import {
-  javascript as overridesJavascript,
-  vue as overridesVue,
-} from './overrides'
+import { overrides } from './overrides'
 
 export function vida(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]) {
   const {
@@ -24,16 +21,13 @@ export function vida(options: OptionsConfig & TypedFlatConfigItem = {}, ...userC
       indent: 2,
       quotes: 'single',
       semi: false,
-      overrides: {
-        'style/arrow-parens': ['error', 'always'],
-        'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-      },
+      overrides: overrides.stylistic,
     },
     javascript: {
-      overrides: overridesJavascript,
+      overrides: overrides.javascript,
     },
     vue: {
-      overrides: overridesVue,
+      overrides: overrides.vue,
     },
     jsx: false,
   }
