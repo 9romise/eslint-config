@@ -18,13 +18,14 @@ export async function pinia(options: OptionsFiles & OptionsOverrides = {}): Prom
         pinia: await interopDefault(import('eslint-plugin-pinia')),
       },
       rules: {
-        'pinia/prefer-single-store-per-file': ['error'],
+        'pinia/never-export-initialized-store': 'error',
+        'pinia/prefer-single-store-per-file': 'warn',
         'pinia/prefer-use-store-naming-convention': ['error', {
           checkStoreNameMismatch: true,
           storeSuffix: 'Store',
         }],
-        'pinia/require-setup-store-properties-export': ['warn'],
-        'pinia/no-duplicate-store-ids': ['error'],
+        'pinia/require-setup-store-properties-export': 'warn',
+        'pinia/no-duplicate-store-ids': 'error',
         ...overrides,
       },
     },
