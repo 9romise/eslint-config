@@ -12,7 +12,7 @@ export async function pinia(options: OptionsFiles & OptionsOverrides = {}): Prom
   } = options
   return [
     {
-      name: '@vida/pinia',
+      name: 'vida/pinia/rules',
       files,
       plugins: {
         pinia: await interopDefault(import('eslint-plugin-pinia')),

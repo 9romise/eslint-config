@@ -1,4 +1,6 @@
 // eslint-disable-next-line antfu/no-import-dist
-import vida from './dist/index.js'
+import { defineConfig } from './dist/index.js'
 
-export default vida()
+export default defineConfig({
+  pinia: true,
+})
