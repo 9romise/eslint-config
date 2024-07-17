@@ -18,8 +18,8 @@ importers:
         specifier: '>=0.1.0'
         version: 0.1.2(eslint@9.7.0)
       eslint-plugin-pinia:
-        specifier: ^0.1.13
-        version: 0.1.13(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
+        specifier: ^0.2.0
+        version: 0.2.0(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)
       local-pkg:
         specifier: ^0.5.0
         version: 0.5.0
@@ -1042,8 +1042,8 @@ packages:
       vue-eslint-parser:
         optional: true
 
-  eslint-plugin-pinia@0.1.13:
-    resolution: {integrity: sha512-I2OEv+ycWD3Lzd1gktIGeSeUp7BficiHYrWLliMrfEgta47P3tXnzKNQRra7iFTd2e1oSWu3qm5CyhEFEpQ5jw==}
+  eslint-plugin-pinia@0.2.0:
+    resolution: {integrity: sha512-WM8TpTiWaueZX4XhuMZHdcwJxUV+mS6ZN+y7WmJeRZ06TZSlcKm3kDAK0pZq5+6SGszz+D0dIXlinoUyDpFCAw==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -3263,7 +3263,7 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-pinia@0.1.13(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3):
+  eslint-plugin-pinia@0.2.0(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3):
     dependencies:
       '@typescript-eslint/utils': 7.15.0(eslint@9.7.0)(typescript@5.5.3)
       eslint: 9.7.0
