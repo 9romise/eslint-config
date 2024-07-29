@@ -4,3 +4,6 @@ updates:
     directory: /
     schedule:
       interval: daily
+    groups:
+      deps-dev:
+        dependency-type: development
