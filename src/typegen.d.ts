@@ -43,4 +43,4 @@ type PiniaPreferUseStoreNamingConvention = []|[{
   [k: string]: unknown | undefined
 }]
 // Names of all the configs
-export type ConfigNames = '@vida/pinia'
+export type ConfigNames = 'vida/pinia/rules'
