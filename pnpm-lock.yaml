@@ -21,8 +21,8 @@ importers:
         specifier: '>=0.1.0'
         version: 0.1.2(eslint@9.8.0)
       eslint-plugin-pinia:
-        specifier: ^0.2.0
-        version: 0.2.0(@typescript-eslint/eslint-plugin@8.3.0(@typescript-eslint/parser@8.3.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
+        specifier: ^0.4.1
+        version: 0.4.1(@typescript-eslint/utils@8.3.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)
       local-pkg:
         specifier: ^0.5.0
         version: 0.5.0
@@ -1329,14 +1329,14 @@ packages:
       vue-eslint-parser:
         optional: true
 
-  eslint-plugin-pinia@0.2.0:
-    resolution: {integrity: sha512-WM8TpTiWaueZX4XhuMZHdcwJxUV+mS6ZN+y7WmJeRZ06TZSlcKm3kDAK0pZq5+6SGszz+D0dIXlinoUyDpFCAw==}
-    engines: {node: 14.x || >= 16}
+  eslint-plugin-pinia@0.4.1:
+    resolution: {integrity: sha512-fiidH7GZ/OMbTHDwHS/tpbdBVBwCk/uEpWCZfzCK7HeiLKUGBBQr3MfHMYx15ACmgRyVu2eGwKELB3s6SMoWbQ==}
+    engines: {node: '>= 18'}
     peerDependencies:
-      '@typescript-eslint/eslint-plugin': '*'
+      '@typescript-eslint/utils': '>= 7.5 || 8.0.1'
       eslint: '>=8.0.0'
     peerDependenciesMeta:
-      '@typescript-eslint/eslint-plugin':
+      '@typescript-eslint/utils':
         optional: true
 
   eslint-plugin-regexp@2.6.0:
@@ -3809,15 +3809,11 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-pinia@0.2.0(@typescript-eslint/eslint-plugin@8.3.0(@typescript-eslint/parser@8.3.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4):
+  eslint-plugin-pinia@0.4.1(@typescript-eslint/utils@8.3.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0):
     dependencies:
-      '@typescript-eslint/utils': 7.18.0(eslint@9.8.0)(typescript@5.5.4)
       eslint: 9.8.0
     optionalDependencies:
-      '@typescript-eslint/eslint-plugin': 8.3.0(@typescript-eslint/parser@8.3.0(eslint@9.8.0)(typescript@5.5.4))(eslint@9.8.0)(typescript@5.5.4)
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
+      '@typescript-eslint/utils': 8.3.0(eslint@9.8.0)(typescript@5.5.4)
 
   eslint-plugin-regexp@2.6.0(eslint@9.8.0):
     dependencies:
