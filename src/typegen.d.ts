@@ -19,6 +19,11 @@ export interface RuleOptions {
    */
   'pinia/no-return-global-properties'?: Linter.RuleEntry<[]>
   /**
+   * Disallow use of storeToRefs inside defineStore
+   * @see https://github.com/lisilinhart/eslint-plugin-pinia/blob/main/docs/rules/no-store-to-refs-in-store.md
+   */
+  'pinia/no-store-to-refs-in-store'?: Linter.RuleEntry<[]>
+  /**
    * Encourages defining each store in a separate file.
    * @see https://github.com/lisilinhart/eslint-plugin-pinia/blob/main/docs/rules/prefer-single-store-per-file.md
    */

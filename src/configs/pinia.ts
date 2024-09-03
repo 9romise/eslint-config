@@ -26,6 +26,8 @@ export async function pinia(options: OptionsFiles & OptionsOverrides = {}): Prom
         }],
         'pinia/require-setup-store-properties-export': 'warn',
         'pinia/no-duplicate-store-ids': 'error',
+        'pinia/no-return-global-properties': 'error',
+        'pinia/no-store-to-refs-in-store': 'error',
         ...overrides,
       },
     },
