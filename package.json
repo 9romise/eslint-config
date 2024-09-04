@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.4",
-    "@types/node": "^22.5.2",
+    "@types/node": "^22.5.3",
     "bumpp": "^9.5.2",
     "eslint": "^9.9.1",
     "eslint-typegen": "^0.3.1",
