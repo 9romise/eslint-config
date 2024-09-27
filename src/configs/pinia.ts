@@ -1,6 +1,6 @@
 import type { OptionsFiles } from '@antfu/eslint-config'
-import { GLOB_JS, GLOB_TS, interopDefault } from '@antfu/eslint-config'
 import type { OptionsOverrides, TypedFlatConfigItem } from '../types'
+import { GLOB_JS, GLOB_TS, interopDefault } from '@antfu/eslint-config'
 
 const GLOB_PINIA_JS = `**/stores/${GLOB_JS}`
 const GLOB_PINIA_TS = `**/stores/${GLOB_TS}`

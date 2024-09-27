@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises'
 import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
-import { pinia } from '../src/configs'
 import { combine } from '../src'
+import { pinia } from '../src/configs'
 
 const configs = await combine(
   pinia(),
