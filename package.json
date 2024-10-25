@@ -60,16 +60,16 @@
     "local-pkg": "^0.5.0"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^0.5.4",
-    "@types/node": "^22.7.3",
-    "bumpp": "^9.5.2",
-    "eslint": "^9.11.1",
+    "@eslint/config-inspector": "^0.5.5",
+    "@types/node": "^22.7.9",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.13.0",
     "eslint-typegen": "^0.3.2",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.3.0",
+    "tsup": "^8.3.4",
     "tsx": "^4.19.1",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
