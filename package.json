@@ -61,14 +61,14 @@
   },
   "devDependencies": {
     "@eslint/config-inspector": "^0.5.5",
-    "@types/node": "^22.8.1",
-    "bumpp": "^9.7.1",
+    "@types/node": "^22.8.4",
+    "bumpp": "^9.8.0",
     "eslint": "^9.13.0",
     "eslint-typegen": "^0.3.2",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.3.4",
-    "tsx": "^4.19.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   },
   "simple-git-hooks": {
