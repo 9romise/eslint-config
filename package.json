@@ -32,7 +32,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "dev": "tsup --watch",
-    "inspect": "npx @eslint/config-inspector",
     "typegen": "tsx scripts/typegen",
     "build": "npm run typegen && tsup",
     "release": "npm run lint && npm run typecheck && bumpp",
@@ -41,17 +40,7 @@
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
-    "@unocss/eslint-plugin": ">=0.50.0",
-    "eslint": ">=9.10.0",
-    "eslint-plugin-format": ">=0.1.0"
-  },
-  "peerDependenciesMeta": {
-    "@unocss/eslint-plugin": {
-      "optional": true
-    },
-    "eslint-plugin-format": {
-      "optional": true
-    }
+    "eslint": ">=9.10.0"
   },
   "dependencies": {
     "@antfu/eslint-config": "^3.9.2",
@@ -60,7 +49,6 @@
     "local-pkg": "^0.5.1"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^0.5.6",
     "@types/node": "^22.9.1",
     "bumpp": "^9.8.1",
     "eslint": "^9.15.0",
