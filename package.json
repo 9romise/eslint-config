@@ -49,9 +49,9 @@
     "local-pkg": "^0.5.1"
   },
   "devDependencies": {
-    "@types/node": "^22.9.3",
+    "@types/node": "^22.10.1",
     "bumpp": "^9.8.1",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-typegen": "^0.3.2",
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
