@@ -18,10 +18,7 @@
     "eslint-config"
   ],
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+    ".": "./dist/index.js"
   },
   "main": "./dits/index.js",
   "types": "./dist/index.d.ts",
