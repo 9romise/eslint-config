@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "2.0.0",
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.2.0",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
@@ -40,18 +40,18 @@
     "eslint": ">=9.10.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.1.0",
+    "@antfu/eslint-config": "^4.1.1",
     "eslint-import-resolver-oxc": "^0.10.1",
     "eslint-plugin-pinia": "^0.4.1",
     "local-pkg": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^1.0.0",
-    "@types/node": "^22.10.10",
-    "bumpp": "^10.0.1",
+    "@types/node": "^22.13.1",
+    "bumpp": "^10.0.2",
     "eslint": "^9.19.0",
     "eslint-typegen": "^1.0.0",
-    "lint-staged": "^15.4.2",
+    "lint-staged": "^15.4.3",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.3.6",
     "tsx": "^4.19.2",
