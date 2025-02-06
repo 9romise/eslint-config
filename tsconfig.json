@@ -4,9 +4,6 @@
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "paths": {
-      "eslint-flat-config-utils": ["node_modules/eslint-flat-config-utils"]
-    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
