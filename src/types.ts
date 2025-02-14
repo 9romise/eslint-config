@@ -1,6 +1,6 @@
 import type { OptionsConfig as AntfuOptions } from '@antfu/eslint-config'
 import type { Linter } from 'eslint'
-import type { RuleOptions } from './typegen'
+import type { RuleOptions } from './typegen.d.ts'
 
 type Rules = RuleOptions
 

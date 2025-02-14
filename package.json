@@ -26,8 +26,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "typegen": "tsx scripts/typegen",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -53,8 +53,9 @@
     "eslint": "^9.20.1",
     "eslint-typegen": "^1.0.0",
     "lint-staged": "^15.4.3",
+    "oxc-transform": "^0.50.0",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.3.6",
+    "tsdown": "^0.5.9",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
