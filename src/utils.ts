@@ -1,6 +1,6 @@
-export function deepMerge<T>(target: T, source: T) {
+export function deepMerge<T extends object>(target: T, source: T): T {
   for (const key in source) {
-    if (Object.hasOwnProperty.call(source, key)) {
+    if (Object.hasOwn(source, key)) {
       if (source[key] instanceof Object && target[key] instanceof Object) {
         target[key] = deepMerge(target[key], source[key])
       } else {

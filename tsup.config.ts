@@ -1,3 +1,4 @@
+import type { Options } from 'tsup'
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
@@ -8,4 +9,4 @@ export default defineConfig({
   clean: true,
   dts: true,
   shims: true,
-})
+}) as Options

@@ -1,4 +1,5 @@
-import type { Awaitable, TypedFlatConfigItem } from '@antfu/eslint-config'
+import type { Awaitable, ConfigNames, TypedFlatConfigItem } from '@antfu/eslint-config'
+import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
 import antfu, { resolveSubOptions } from '@antfu/eslint-config'
 import { createOxcImportResolver } from 'eslint-import-resolver-oxc'
@@ -7,7 +8,7 @@ import { pinia } from './configs'
 import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
-export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]) {
+export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const {
     pinia: enablePinia = isPackageExists('pinia'),
   } = options
