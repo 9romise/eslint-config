@@ -42,6 +42,7 @@
     "@antfu/eslint-config": "^4.2.0",
     "eslint-flat-config-utils": "^2.0.1",
     "eslint-import-resolver-oxc": "^0.10.1",
+    "eslint-plugin-de-morgan": "^1.0.1",
     "eslint-plugin-pinia": "^0.4.1",
     "local-pkg": "^1.0.0"
   },

@@ -4,7 +4,7 @@ import type { OptionsConfig } from './types'
 import antfu, { resolveSubOptions } from '@antfu/eslint-config'
 import { createOxcImportResolver } from 'eslint-import-resolver-oxc'
 import { isPackageExists } from 'local-pkg'
-import { pinia } from './configs'
+import { deMorgan, pinia } from './configs'
 import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
@@ -13,7 +13,9 @@ export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, 
     pinia: enablePinia = isPackageExists('pinia'),
   } = options
 
-  const configs: Awaitable<TypedFlatConfigItem[]>[] = []
+  const configs: Awaitable<TypedFlatConfigItem[]>[] = [
+    deMorgan(),
+  ]
 
   if (enablePinia)
     // @ts-expect-error safe type

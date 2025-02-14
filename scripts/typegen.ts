@@ -1,13 +1,14 @@
 import fs from 'node:fs/promises'
 import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
 import { combine } from '../src'
-import { pinia } from '../src/configs'
+import { deMorgan, pinia } from '../src/configs'
 
 const configs = await combine(
   pinia(),
+  deMorgan(),
 )
 
-const configNames = configs.map((i) => i.name).filter(Boolean) as string[]
+const configNames = configs.map((i) => i.name).filter(Boolean)
 
 let dts = await flatConfigsToRulesDTS(configs, {
   includeAugmentation: false,
