@@ -32,7 +32,6 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "npm run lint && npm run typecheck && bumpp",
     "prepack": "npm run build",
     "prepare": "npm run typegen && simple-git-hooks"
   },
@@ -49,7 +48,6 @@
   "devDependencies": {
     "@eslint/config-inspector": "^1.0.0",
     "@types/node": "^22.13.4",
-    "bumpp": "^10.0.3",
     "eslint": "^9.20.1",
     "eslint-typegen": "^1.0.0",
     "lint-staged": "^15.4.3",
