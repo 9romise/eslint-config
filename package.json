@@ -22,7 +22,9 @@
   },
   "main": "./dits/index.js",
   "types": "./dist/index.d.ts",
+  "bin": "./bin/index.js",
   "files": [
+    "bin",
     "dist"
   ],
   "scripts": {
@@ -40,15 +42,18 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "^4.2.0",
+    "ansis": "^3.14.0",
     "eslint-flat-config-utils": "^2.0.1",
     "eslint-import-resolver-oxc": "^0.10.1",
     "eslint-plugin-de-morgan": "^1.0.1",
     "eslint-plugin-pinia": "^0.4.1",
-    "local-pkg": "^1.0.0"
+    "local-pkg": "^1.0.0",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@eslint/config-inspector": "^1.0.0",
     "@types/node": "^22.13.4",
+    "@types/yargs": "^17.0.33",
     "eslint": "^9.20.1",
     "eslint-typegen": "^1.0.0",
     "lint-staged": "^15.4.3",
