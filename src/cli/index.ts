@@ -9,8 +9,8 @@ const instance = yargs(hideBin(process.argv))
   .scriptName('@vida0905/eslint-config')
   .usage('')
   .command(
-    '*',
-    'Run the initialization',
+    'update',
+    'update configuration files',
     (args) =>
       args.option(
         'vscode',
