@@ -3,7 +3,7 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { green } from 'ansis'
-import { vscodeSettingsString } from './constants'
+import { vscodeSettingsString } from '../constants'
 
 export async function updateVSCodeSettings(): Promise<void> {
   const cwd = process.cwd()

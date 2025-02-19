@@ -2,16 +2,17 @@
 import process from 'node:process'
 import { cac } from 'cac'
 import { version } from '../../package.json'
-import { run } from './run'
+import { update } from './update/index'
 
 const cli = cac('@vida0905/eslint-config')
 
 cli
-  .command('update', 'update configuration files')
-  .option('--vscode', 'Update .vscode/settings.json')
-  .action(async (args) => {
+  .command('update [...files]', 'Update configuration files for specified files')
+  .alias('up')
+  .option('vscode', 'Update .vscode/settings.json')
+  .action(async (files) => {
     try {
-      await run(args)
+      await update(files)
     } catch (error) {
       console.error(`✘ ${String(error)}`)
       process.exit(1)
