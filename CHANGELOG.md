@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.2](https://github.com/9romise/eslint-config/compare/v2.1.1...v2.1.2) (2025-02-19)
+
+
+### Chores
+
+* replace `nano-staged` with `lint-staged` ([03e9cb6](https://github.com/9romise/eslint-config/commit/03e9cb653086ae67553c1a21df856954a30b86c5))
+* replace run command with update functionality ([46f1353](https://github.com/9romise/eslint-config/commit/46f1353f4738c957c68c3b0e74f0e85a270be92f))
+
 ## [2.1.1](https://github.com/9romise/eslint-config/compare/v2.1.0...v2.1.1) (2025-02-18)
 
 
