@@ -31,7 +31,9 @@
     "dev": "tsdown --watch",
     "build": "tsdown",
     "typegen": "tsx scripts/typegen",
-    "check": "tsc --noEmit && eslint",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run lint",
     "prepack": "npm run build",
     "prepare": "npm run typegen && simple-git-hooks"
   },
