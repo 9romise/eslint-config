@@ -1,4 +1,4 @@
-import type { Config } from 'tsdown'
+import type { UserConfig } from 'tsdown'
 import { defineConfig } from 'tsdown'
 
 export default defineConfig({
@@ -10,4 +10,4 @@ export default defineConfig({
   clean: true,
   dts: { transformer: 'oxc' },
   bundleDts: true,
-}) as Config
+}) as UserConfig
