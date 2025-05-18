@@ -6,8 +6,4 @@ export default defineConfig({
     'src/index.ts',
     'src/cli/index.ts',
   ],
-  format: 'esm',
-  clean: true,
-  dts: { transformer: 'oxc' },
-  bundleDts: true,
 }) as UserConfig

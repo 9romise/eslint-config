@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "2.1.2",
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.11.0",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
@@ -41,25 +41,24 @@
     "eslint": ">=9.10.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.11.0",
-    "ansis": "^3.17.0",
+    "@antfu/eslint-config": "^4.13.1",
+    "ansis": "^4.0.0",
     "cac": "^6.7.14",
     "eslint-flat-config-utils": "^2.0.1",
-    "eslint-import-resolver-oxc": "^0.13.1",
+    "eslint-import-resolver-oxc": "^0.13.2",
     "eslint-plugin-de-morgan": "^1.2.1",
     "eslint-plugin-pinia": "^0.4.1",
     "local-pkg": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.17",
-    "eslint": "^9.23.0",
-    "eslint-typegen": "^2.1.0",
+    "@types/node": "^22.15.18",
+    "eslint": "^9.27.0",
+    "eslint-typegen": "^2.2.0",
     "nano-staged": "^0.8.0",
-    "oxc-transform": "^0.62.0",
-    "simple-git-hooks": "^2.12.1",
-    "tsdown": "^0.6.10",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "simple-git-hooks": "^2.13.0",
+    "tsdown": "^0.11.11",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
