@@ -2,7 +2,7 @@ import type { Awaitable, ConfigNames, TypedFlatConfigItem } from '@antfu/eslint-
 import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
 import antfu, { resolveSubOptions } from '@antfu/eslint-config'
-import { createOxcImportResolver } from 'eslint-import-resolver-oxc'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import { isPackageExists } from 'local-pkg'
 import { deMorgan, pinia } from './configs'
 import { overrides } from './overrides'
@@ -44,7 +44,7 @@ export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, 
     name: 'vida/imports/setup',
     settings: {
       'import-x/resolver-next': [
-        createOxcImportResolver(),
+        createTypeScriptImportResolver(),
       ],
     },
   })
