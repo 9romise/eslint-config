@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/9romise/eslint-config/compare/v2.1.2...v2.2.0) (2025-05-25)
+
+
+### Features
+
+* update deps ([0d5790d](https://github.com/9romise/eslint-config/commit/0d5790dde07bafbf8b97d689347c3c74fcd11628))
+
+
+### Bug Fixes
+
+* replace `eslint-import-resolver-oxc` with `eslint-import-resolver-typescript` ([6a3897f](https://github.com/9romise/eslint-config/commit/6a3897f309fd222468e5b3b65527d725a0112386))
+
 ## [2.1.2](https://github.com/9romise/eslint-config/compare/v2.1.1...v2.1.2) (2025-02-19)
 
 
