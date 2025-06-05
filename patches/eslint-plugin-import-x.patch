@@ -1,0 +1,36 @@
+diff --git a/lib/node-resolver.js b/lib/node-resolver.js
+index 08922955c9edf42872609f16985ddfc580d2c4b2..86afc654950427f706734c7221b7a258588cbb24 100644
+--- a/lib/node-resolver.js
++++ b/lib/node-resolver.js
+@@ -1,13 +1,5 @@
+ import module from 'node:module';
+-import path from 'node:path';
+-import { ResolverFactory } from 'unrs-resolver';
+ export function createNodeResolver({ extensions = ['.mjs', '.cjs', '.js', '.json', '.node'], conditionNames = ['import', 'require', 'default'], mainFields = ['module', 'main'], ...restOptions } = {}) {
+-    const resolver = new ResolverFactory({
+-        extensions,
+-        conditionNames,
+-        mainFields,
+-        ...restOptions,
+-    });
+     return {
+         interfaceVersion: 3,
+         name: 'eslint-plugin-import-x:node',
+@@ -18,16 +10,7 @@ export function createNodeResolver({ extensions = ['.mjs', '.cjs', '.js', '.json
+             if (modulePath.startsWith('data:')) {
+                 return { found: true, path: null };
+             }
+-            try {
+-                const resolved = resolver.sync(path.dirname(sourceFile), modulePath);
+-                if (resolved.path) {
+-                    return { found: true, path: resolved.path };
+-                }
+-                return { found: false };
+-            }
+-            catch {
+-                return { found: false };
+-            }
++            return { found: false };
+         },
+     };
+ }

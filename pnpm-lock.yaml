@@ -7,6 +7,11 @@ settings:
 overrides:
   unrs-resolver: '-'
 
+patchedDependencies:
+  eslint-plugin-import-x:
+    hash: f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa
+    path: patches/eslint-plugin-import-x.patch
+
 importers:
 
   .:
@@ -25,7 +30,7 @@ importers:
         version: 2.1.0
       eslint-import-resolver-oxc:
         specifier: ^0.13.2
-        version: 0.13.2(eslint-plugin-import-x@4.13.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2))
+        version: 0.13.2(eslint-plugin-import-x@4.13.0(patch_hash=f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-de-morgan:
         specifier: ^1.2.1
         version: 1.2.1(eslint@9.28.0(jiti@2.4.2))
@@ -485,73 +490,61 @@ packages:
     resolution: {integrity: sha512-u2ndfeEUrW898eXM+qPxIN8TvTPjI90NDQBRgaxxkOfNw3xaotloeiZGz5+Yzlfxgvxr9DY9FdYkqhUhSnGhOw==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-arm64-gnu@9.0.2':
     resolution: {integrity: sha512-RGFW4vCfKMFEIzb9VCY0oWyyY9tR1/o+wDdNePhiUXZU4SVniRPQaZ1SJ0sUFI1k25pXZmzQmIP6cBmazi/Dew==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-arm64-musl@5.3.0':
     resolution: {integrity: sha512-TzbjmFkcnESGuVItQ2diKacX8vu5G0bH3BHmIlmY4OSRLyoAlrJFwGKAHmh6C9+Amfcjo2rx8vdm7swzmsGC6Q==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-linux-arm64-musl@9.0.2':
     resolution: {integrity: sha512-lxx/PibBfzqYvut2Y8N2D0Ritg9H8pKO+7NUSJb9YjR/bfk2KRmP8iaUz3zB0JhPtf/W3REs65oKpWxgflGToA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-linux-riscv64-gnu@5.3.0':
     resolution: {integrity: sha512-NH3pjAqh8nuN29iRuRfTY42Vn03ctoR9VE8llfoUKUfhHUjFHYOXK5VSkhjj1usG8AeuesvqrQnLptCRQVTi/Q==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-riscv64-gnu@9.0.2':
     resolution: {integrity: sha512-yD28ptS/OuNhwkpXRPNf+/FvrO7lwURLsEbRVcL1kIE0GxNJNMtKgIE4xQvtKDzkhk6ZRpLho5VSrkkF+3ARTQ==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-s390x-gnu@5.3.0':
     resolution: {integrity: sha512-tuZtkK9sJYh2MC2uhol1M/8IMTB6ZQ5jmqP2+k5XNXnOb/im94Y5uV/u2lXwVyIuKHZZHtr+0d1HrOiNahoKpw==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-s390x-gnu@9.0.2':
     resolution: {integrity: sha512-WBwEJdspoga2w+aly6JVZeHnxuPVuztw3fPfWrei2P6rNM5hcKxBGWKKT6zO1fPMCB4sdDkFohGKkMHVV1eryQ==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-gnu@5.3.0':
     resolution: {integrity: sha512-VzhPYmZCtoES/ThcPdGSmMop7JlwgqtSvlgtKCW15ByV2JKyl8kHAHnPSBfpIooXb0ehFnRdxFtL9qtAEWy01g==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-gnu@9.0.2':
     resolution: {integrity: sha512-a2z3/cbOOTUq0UTBG8f3EO/usFcdwwXnCejfXv42HmV/G8GjrT4fp5+5mVDoMByH3Ce3iVPxj1LmS6OvItKMYQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-musl@5.3.0':
     resolution: {integrity: sha512-Hi39cWzul24rGljN4Vf1lxjXzQdCrdxO5oCT7KJP4ndSlqIUODJnfnMAP1YhcnIRvNvk+5E6sZtnEmFUd/4d8Q==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-linux-x64-musl@9.0.2':
     resolution: {integrity: sha512-bHZF+WShYQWpuswB9fyxcgMIWVk4sZQT0wnwpnZgQuvGTZLkYJ1JTCXJMtaX5mIFHf69ngvawnwPIUA4Feil0g==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-wasm32-wasi@5.3.0':
     resolution: {integrity: sha512-ddujvHhP3chmHnSXRlkPVUeYj4/B7eLZwL4yUid+df3WCbVh6DgoT9RmllZn21AhxgKtMdekDdyVJYKFd8tl4A==}
@@ -619,25 +612,21 @@ packages:
     resolution: {integrity: sha512-kg7yeU3XIGmaoKF1+u8OGJ/NE2XMpwgtQpCWzJh7Z8DhJDjMlszhV3DrnKjywI3NmVNCEXYwGO6mYff31xuHug==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-arm64-musl@1.0.0-beta.10-commit.87188ed':
     resolution: {integrity: sha512-gvXDfeL4C6dql3Catf8HgnBnDy/zr8ZFX3f/edQ+QY0iJVHY/JG+bitRsNPWWOFmsv/Xm+qSyR44e5VW8Pi1oQ==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-linux-x64-gnu@1.0.0-beta.10-commit.87188ed':
     resolution: {integrity: sha512-rpzxr4TyvM3+tXGNjM3AEtgnUM9tpYe6EsIuLiU3fs+KaMKj5vOTr5k/eCACxnjDi4s78ARmqT+Z3ZS2E06U5w==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-x64-musl@1.0.0-beta.10-commit.87188ed':
     resolution: {integrity: sha512-cq+Gd1jEie1xxBNllnna21FPaWilWzQK+sI8kF1qMWRI6U909JjS/SzYR0UNLbvNa+neZh8dj37XnxCTQQ40Lw==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-wasm32-wasi@1.0.0-beta.10-commit.87188ed':
     resolution: {integrity: sha512-xN4bJ0DQeWJiyerA46d5Lyv5Cor/FoNlbaO9jEOHZDdWz78E2xt/LE3bOND3c59gZa+/YUBEifs4lwixU/wWPg==}
@@ -1995,7 +1984,7 @@ snapshots:
       eslint-merge-processors: 2.0.0(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-antfu: 3.1.1(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-command: 3.2.1(eslint@9.28.0(jiti@2.4.2))
-      eslint-plugin-import-x: 4.13.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
+      eslint-plugin-import-x: 4.13.0(patch_hash=f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
       eslint-plugin-jsdoc: 50.6.17(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-jsonc: 2.20.1(eslint@9.28.0(jiti@2.4.2))
       eslint-plugin-n: 17.18.0(eslint@9.28.0(jiti@2.4.2))
@@ -2794,13 +2783,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-oxc@0.13.2(eslint-plugin-import-x@4.13.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)):
+  eslint-import-resolver-oxc@0.13.2(eslint-plugin-import-x@4.13.0(patch_hash=f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.28.0(jiti@2.4.2)
       oxc-resolver: 5.3.0
       stable-hash: 0.0.5
     optionalDependencies:
-      eslint-plugin-import-x: 4.13.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
+      eslint-plugin-import-x: 4.13.0(patch_hash=f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
 
   eslint-json-compat-utils@0.2.1(eslint@9.28.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
     dependencies:
@@ -2832,7 +2821,7 @@ snapshots:
       eslint: 9.28.0(jiti@2.4.2)
       eslint-compat-utils: 0.5.1(eslint@9.28.0(jiti@2.4.2))
 
-  eslint-plugin-import-x@4.13.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3):
+  eslint-plugin-import-x@4.13.0(patch_hash=f3800c0c27b0ec9d09575eb72216e166c1dd3c6ad213529839efae8e2d3b2baa)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3):
     dependencies:
       '@typescript-eslint/utils': 8.32.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
       comment-parser: 1.4.1
