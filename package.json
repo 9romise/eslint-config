@@ -34,8 +34,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "check": "npm run typecheck && npm run lint",
-    "prepack": "npm run build",
-    "prepare": "npm run typegen && simple-git-hooks"
+    "prepublishOnly": "npm run typegen && npm run build"
   },
   "peerDependencies": {
     "eslint": ">=9.10.0"
