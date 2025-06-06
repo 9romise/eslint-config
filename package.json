@@ -61,6 +61,7 @@
   },
   "pnpm": {
     "overrides": {
+      "eslint-import-resolver-node": "-",
       "unrs-resolver": "-"
     },
     "patchedDependencies": {
