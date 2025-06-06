@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/9romise/eslint-config/compare/v2.2.0...v2.2.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* treat `oxc-resolver` as peerDependency ([1a97b5b](https://github.com/9romise/eslint-config/commit/1a97b5b8e589df4d22621be2cdb68c436936fe4b))
+
 ## [2.2.0](https://github.com/9romise/eslint-config/compare/v2.1.2...v2.2.0) (2025-06-06)
 
 
