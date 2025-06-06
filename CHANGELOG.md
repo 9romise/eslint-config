@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.2.0](https://github.com/9romise/eslint-config/compare/v2.1.2...v2.2.0) (2025-06-06)
+
+
+### Features
+
+* update deps ([0d5790d](https://github.com/9romise/eslint-config/commit/0d5790dde07bafbf8b97d689347c3c74fcd11628))
+
+
+### Bug Fixes
+
+* don't install `eslint-import-resolver-node` ([d6447b3](https://github.com/9romise/eslint-config/commit/d6447b314da04d92e057189a0a9f815ced6d7df1))
+* don't install unrs-resolver ([cc583a0](https://github.com/9romise/eslint-config/commit/cc583a086825424b4668366bca5a915fcee5be8b))
+* replace `eslint-import-resolver-oxc` with `eslint-import-resolver-typescript` ([6a3897f](https://github.com/9romise/eslint-config/commit/6a3897f309fd222468e5b3b65527d725a0112386))
+
 ## [2.1.2](https://github.com/9romise/eslint-config/compare/v2.1.1...v2.1.2) (2025-02-19)
 
 
