@@ -37,7 +37,8 @@
     "prepare": "npm run typegen && npm run build"
   },
   "peerDependencies": {
-    "eslint": ">=9.10.0"
+    "eslint": ">=9.10.0",
+    "oxc-resolver": "*"
   },
   "dependencies": {
     "@antfu/eslint-config": "^4.13.3",

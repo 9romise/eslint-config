@@ -41,6 +41,9 @@ importers:
       local-pkg:
         specifier: ^1.1.1
         version: 1.1.1
+      oxc-resolver:
+        specifier: '*'
+        version: 9.0.2
     devDependencies:
       '@types/node':
         specifier: ^22.15.30
