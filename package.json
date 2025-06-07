@@ -37,15 +37,13 @@
     "prepare": "npm run typegen && npm run build"
   },
   "peerDependencies": {
-    "eslint": ">=9.10.0",
-    "oxc-resolver": "*"
+    "eslint": ">=9.10.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.13.3",
+    "@antfu/eslint-config": "^4.14.1",
     "ansis": "^4.1.0",
     "cac": "^6.7.14",
     "eslint-flat-config-utils": "^2.1.0",
-    "eslint-import-resolver-oxc": "^0.15.0",
     "eslint-plugin-de-morgan": "^1.2.1",
     "eslint-plugin-pinia": "^0.4.1",
     "local-pkg": "^1.1.1"
@@ -59,15 +57,6 @@
     "tsdown": "^0.12.7",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
-  },
-  "pnpm": {
-    "overrides": {
-      "eslint-import-resolver-node": "-",
-      "unrs-resolver": "-"
-    },
-    "patchedDependencies": {
-      "eslint-plugin-import-x": "patches/eslint-plugin-import-x.patch"
-    }
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
