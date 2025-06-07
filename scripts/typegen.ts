@@ -1,10 +1,9 @@
 import fs from 'node:fs/promises'
 import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
 import { combine } from '../src'
-import { deMorgan, pinia } from '../src/configs'
+import { deMorgan } from '../src/configs'
 
 const configs = await combine(
-  pinia(),
   deMorgan(),
 )
 

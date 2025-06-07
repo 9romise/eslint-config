@@ -23,12 +23,6 @@ importers:
       eslint-plugin-de-morgan:
         specifier: ^1.2.1
         version: 1.2.1(eslint@9.28.0(jiti@2.4.2))
-      eslint-plugin-pinia:
-        specifier: ^0.4.1
-        version: 0.4.1(@typescript-eslint/utils@8.33.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2))
-      local-pkg:
-        specifier: ^1.1.1
-        version: 1.1.1
     devDependencies:
       '@types/node':
         specifier: ^22.15.30
@@ -910,16 +904,6 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.45.0'
-
-  eslint-plugin-pinia@0.4.1:
-    resolution: {integrity: sha512-fiidH7GZ/OMbTHDwHS/tpbdBVBwCk/uEpWCZfzCK7HeiLKUGBBQr3MfHMYx15ACmgRyVu2eGwKELB3s6SMoWbQ==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      '@typescript-eslint/utils': '>= 7.5 || 8.0.1'
-      eslint: '>=8.0.0'
-    peerDependenciesMeta:
-      '@typescript-eslint/utils':
-        optional: true
 
   eslint-plugin-pnpm@0.3.1:
     resolution: {integrity: sha512-vi5iHoELIAlBbX4AW8ZGzU3tUnfxuXhC/NKo3qRcI5o9igbz6zJUqSlQ03bPeMqWIGTPatZnbWsNR1RnlNERNQ==}
@@ -2572,12 +2556,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  eslint-plugin-pinia@0.4.1(@typescript-eslint/utils@8.33.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.28.0(jiti@2.4.2)):
-    dependencies:
-      eslint: 9.28.0(jiti@2.4.2)
-    optionalDependencies:
-      '@typescript-eslint/utils': 8.33.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
 
   eslint-plugin-pnpm@0.3.1(eslint@9.28.0(jiti@2.4.2)):
     dependencies:

@@ -1,24 +1,15 @@
 import type { Awaitable, ConfigNames, TypedFlatConfigItem } from '@antfu/eslint-config'
 import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
-import antfu, { resolveSubOptions } from '@antfu/eslint-config'
-import { isPackageExists } from 'local-pkg'
-import { deMorgan, pinia } from './configs'
+import antfu from '@antfu/eslint-config'
+import { deMorgan } from './configs'
 import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
 export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
-  const {
-    pinia: enablePinia = isPackageExists('pinia'),
-  } = options
-
   const configs: Awaitable<TypedFlatConfigItem[]>[] = [
     deMorgan(),
   ]
-
-  if (enablePinia)
-    // @ts-expect-error safe type
-    configs.push(pinia(resolveSubOptions(options, 'pinia')))
 
   const antfuConfig: OptionsConfig = {
     stylistic: {
