@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.0](https://github.com/9romise/eslint-config/compare/v2.2.1...v2.3.0) (2025-06-07)
+
+
+### Features
+
+* remove `eslint-plugin-pinia` ([43a3b35](https://github.com/9romise/eslint-config/commit/43a3b3524d35006a6fe498c28f2f95319e0f8d0c))
+* remove eslint-plugin-import-x eco ([45e8575](https://github.com/9romise/eslint-config/commit/45e85755a759adeb4eb59dab814e6f79eccbcde0))
+
 ## [2.2.1](https://github.com/9romise/eslint-config/compare/v2.2.0...v2.2.1) (2025-06-06)
 
 
