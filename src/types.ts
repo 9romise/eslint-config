@@ -18,10 +18,4 @@ export interface OptionsOverrides {
 }
 
 export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
-  /**
-   * Enable Pinia support.
-   *
-   * @default auto-detect based on the dependencies
-   */
-  pinia?: boolean | OptionsOverrides
 }
