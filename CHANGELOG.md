@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/9romise/eslint-config/compare/v2.3.0...v2.3.1) (2025-06-15)
+
+
+### Bug Fixes
+
+* cleanup options ([b0836bc](https://github.com/9romise/eslint-config/commit/b0836bc66a9ba62717c5cfc916732e30e9a22b98))
+
 ## [2.3.0](https://github.com/9romise/eslint-config/compare/v2.2.1...v2.3.0) (2025-06-07)
 
 
