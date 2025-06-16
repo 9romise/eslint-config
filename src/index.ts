@@ -2,7 +2,8 @@ import type { Awaitable, ConfigNames, TypedFlatConfigItem } from '@antfu/eslint-
 import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
-import { deMorgan } from './configs'
+import { isPackageExists } from 'local-pkg'
+import { deMorgan, nuxt } from './configs'
 import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
@@ -10,6 +11,10 @@ export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, 
   const configs: Awaitable<TypedFlatConfigItem[]>[] = [
     deMorgan(),
   ]
+
+  if (isPackageExists('nuxt')) {
+    configs.push(nuxt())
+  }
 
   const antfuConfig: OptionsConfig = {
     stylistic: {

@@ -37,14 +37,21 @@
     "prepare": "npm run typegen && npm run build"
   },
   "peerDependencies": {
+    "@nuxt/eslint-plugin": "*",
     "eslint": ">=9.10.0"
+  },
+  "peerDependenciesMeta": {
+    "@nuxt/eslint-plugin": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@antfu/eslint-config": "catalog:main",
     "ansis": "catalog:cli",
     "cac": "catalog:cli",
     "eslint-flat-config-utils": "catalog:main",
-    "eslint-plugin-de-morgan": "catalog:plugin"
+    "eslint-plugin-de-morgan": "catalog:plugin",
+    "local-pkg": "catalog:main"
   },
   "devDependencies": {
     "@types/node": "catalog:dev",
