@@ -1,7 +1,7 @@
 {
   "name": "@vida0905/eslint-config",
   "type": "module",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "packageManager": "pnpm@10.12.1",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
