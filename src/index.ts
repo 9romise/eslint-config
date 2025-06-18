@@ -7,7 +7,7 @@ import { deMorgan, nuxt } from './configs'
 import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
-export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, ...userConfigs: TypedFlatConfigItem[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const configs: Awaitable<TypedFlatConfigItem[]>[] = [
     deMorgan(),
   ]
@@ -25,9 +25,6 @@ export function defineConfig(options: OptionsConfig & TypedFlatConfigItem = {}, 
     },
     javascript: {
       overrides: overrides.javascript,
-    },
-    vue: {
-      overrides: overrides.vue,
     },
   }
 
