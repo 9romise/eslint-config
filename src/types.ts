@@ -2,7 +2,7 @@ import type { OptionsConfig as AntfuOptions } from '@antfu/eslint-config'
 import type { Linter } from 'eslint'
 import type { RuleOptions } from './typegen.d.ts'
 
-type Rules = RuleOptions
+export interface Rules extends RuleOptions {}
 
 export type TypedFlatConfigItem = Omit<Linter.Config<Linter.RulesRecord & Rules>, 'plugins'> & {
   /**
@@ -18,4 +18,6 @@ export interface OptionsOverrides {
 }
 
 export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
+  deMorgan?: boolean | OptionsOverrides
+  nuxt?: boolean | OptionsOverrides
 }
