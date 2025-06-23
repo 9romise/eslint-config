@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.4.1](https://github.com/9romise/eslint-config/compare/v2.4.0...v2.4.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* add deMorgan and nuxt options ([3d28927](https://github.com/9romise/eslint-config/commit/3d28927aa18b798dd4db084932fed54886503d06))
+* don't override vue ([6f4768e](https://github.com/9romise/eslint-config/commit/6f4768ef5b104acae65d661ef931d8c6a9c5b367))
+* **style:** update `quotes` ([e55c1fd](https://github.com/9romise/eslint-config/commit/e55c1fd18598252201b3219369823dad05352e63))
+
+
+### Build Related
+
+* split cli ([9eae71b](https://github.com/9romise/eslint-config/commit/9eae71b4716181850e1abdfaa0068699b28945d0))
+
 ## [2.4.0](https://github.com/9romise/eslint-config/compare/v2.3.0...v2.4.0) (2025-06-17)
 
 
