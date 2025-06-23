@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.2](https://github.com/9romise/eslint-config/compare/v2.4.1...v2.4.2) (2025-06-23)
+
+
+### Bug Fixes
+
+* correct options ([f20e17f](https://github.com/9romise/eslint-config/commit/f20e17f84737eac63617231fda0d9fc53f90cdf9))
+
 ## [2.4.1](https://github.com/9romise/eslint-config/compare/v2.4.0...v2.4.1) (2025-06-20)
 
 
