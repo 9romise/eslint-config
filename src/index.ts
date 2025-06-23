@@ -8,11 +8,18 @@ import { overrides } from './overrides'
 import { deepMerge } from './utils'
 
 export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
-  const configs: Awaitable<TypedFlatConfigItem[]>[] = [
-    deMorgan(),
-  ]
+  const {
+    deMorgan: enableDeMorgan,
+    nuxt: enableNuxt = isPackageExists('nuxt'),
+  } = options
 
-  if (isPackageExists('nuxt')) {
+  const configs: Awaitable<TypedFlatConfigItem[]>[] = []
+
+  if (enableDeMorgan) {
+    configs.push(deMorgan())
+  }
+
+  if (enableNuxt) {
     configs.push(nuxt())
   }
 
