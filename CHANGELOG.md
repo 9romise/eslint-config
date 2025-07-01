@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.3](https://github.com/9romise/eslint-config/compare/v2.4.2...v2.4.3) (2025-07-01)
+
+
+### Bug Fixes
+
+* update `style/indent` ([3f93ab8](https://github.com/9romise/eslint-config/commit/3f93ab86c3767f5efccb1adcf60f103e52566f71))
+
 ## [2.4.2](https://github.com/9romise/eslint-config/compare/v2.4.1...v2.4.2) (2025-06-23)
 
 
