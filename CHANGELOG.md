@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.4](https://github.com/9romise/eslint-config/compare/v2.4.3...v2.4.4) (2025-07-03)
+
+
+### Bug Fixes
+
+* fix `indent` for `SwitchCase` ([bc4ac35](https://github.com/9romise/eslint-config/commit/bc4ac350dd1281d0fef2f6e1b00c43e82e6d89b8))
+
 ## [2.4.3](https://github.com/9romise/eslint-config/compare/v2.4.2...v2.4.3) (2025-07-01)
 
 
