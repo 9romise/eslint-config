@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/9romise/eslint-config/compare/v2.4.4...v2.5.0) (2025-07-25)
+
+
+### Features
+
+* update deps ([58c1885](https://github.com/9romise/eslint-config/commit/58c188516c3c396ead205411d618ec98c1b01c32))
+
 ## [2.4.4](https://github.com/9romise/eslint-config/compare/v2.4.3...v2.4.4) (2025-07-03)
 
 
