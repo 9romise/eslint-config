@@ -22,12 +22,12 @@ catalogs:
     eslint-typegen:
       specifier: ^2.3.0
       version: 2.3.0
+    husky:
+      specifier: ^9.1.7
+      version: 9.1.7
     nano-staged:
       specifier: ^0.8.0
       version: 0.8.0
-    simple-git-hooks:
-      specifier: ^2.13.0
-      version: 2.13.0
     tsdown:
       specifier: ^0.13.0
       version: 0.13.0
@@ -94,12 +94,12 @@ importers:
       eslint-typegen:
         specifier: catalog:dev
         version: 2.3.0(eslint@9.31.0(jiti@2.5.1))
+      husky:
+        specifier: catalog:dev
+        version: 9.1.7
       nano-staged:
         specifier: catalog:dev
         version: 0.8.0
-      simple-git-hooks:
-        specifier: catalog:dev
-        version: 2.13.0
       tsdown:
         specifier: catalog:dev
         version: 0.13.0(typescript@5.8.3)
@@ -1372,6 +1372,11 @@ packages:
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -1827,10 +1832,6 @@ packages:
 
   siginfo@2.0.0:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
-
-  simple-git-hooks@2.13.0:
-    resolution: {integrity: sha512-N+goiLxlkHJlyaYEglFypzVNMaNplPAk5syu0+OPp/Bk6dwVoXF6FfOw2vO0Dp+JHsBaI+w6cm8TnFl2Hw6tDA==}
-    hasBin: true
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -3331,6 +3332,8 @@ snapshots:
 
   hookable@5.5.3: {}
 
+  husky@9.1.7: {}
+
   ignore@5.3.2: {}
 
   ignore@7.0.5: {}
@@ -3967,8 +3970,6 @@ snapshots:
   shebang-regex@3.0.0: {}
 
   siginfo@2.0.0: {}
-
-  simple-git-hooks@2.13.0: {}
 
   sisteransi@1.0.5: {}
 
