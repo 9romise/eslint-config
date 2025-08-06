@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.5.1](https://github.com/9romise/eslint-config/compare/v2.5.0...v2.5.1) (2025-08-06)
+
+
+### Bug Fixes
+
+* apply options correctly ([218693c](https://github.com/9romise/eslint-config/commit/218693cf470f21855ed8058fdaac6da130e6d3e3))
+* **vue:** setup `vue/max-attributes-per-line` ([bfce96f](https://github.com/9romise/eslint-config/commit/bfce96fcf4ce3c464ac140a18138a824b69d2a11))
+
+
+### Chores
+
+* add testing of `options` ([51838b5](https://github.com/9romise/eslint-config/commit/51838b5008b916fa4836318dfe418ed2b0e61212))
+* re-organize overrides ([611c286](https://github.com/9romise/eslint-config/commit/611c286744f5daa1f3b9d5d808ce21b8d7894015))
+
 ## [2.5.0](https://github.com/9romise/eslint-config/compare/v2.4.4...v2.5.0) (2025-07-25)
 
 
