@@ -32,13 +32,14 @@
     "build": "tsdown",
     "typegen": "tsx scripts/typegen",
     "typecheck": "tsc --noEmit",
+    "test": "vitest",
     "lint": "eslint .",
     "check": "npm run typecheck && npm run lint",
     "prepare": "npm run typegen && npm run build",
     "inspect": "npx @eslint/config-inspector"
   },
   "peerDependencies": {
-    "@nuxt/eslint-plugin": "*",
+    "@nuxt/eslint-plugin": "catalog:plugin",
     "eslint": ">=9.10.0"
   },
   "peerDependenciesMeta": {
@@ -62,7 +63,8 @@
     "simple-git-hooks": "catalog:dev",
     "tsdown": "catalog:dev",
     "tsx": "catalog:dev",
-    "typescript": "catalog:dev"
+    "typescript": "catalog:dev",
+    "vitest": "catalog:test"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
