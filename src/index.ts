@@ -30,16 +30,22 @@ export function defineConfig(options: OptionsConfig = {}, ...userConfigs: Awaita
   )
 }
 
-function applyOptions(options: OptionsConfig) {
-  for (const key in antfuConfig) {
-    // @ts-expect-error type
-    if (options[key] === true) {
-      // @ts-expect-error type
-      options[key] = antfuConfig[key]
+export function applyOptions(options: OptionsConfig): OptionsConfig {
+  Object.keys(antfuConfig).forEach((key) => {
+    // @ts-expect-error hard to def
+    const optionVal = options[key]
+    // @ts-expect-error hard to def
+    const defaultVal = antfuConfig[key]
+    if (optionVal === true) {
+      // @ts-expect-error hard to def
+      options[key] = defaultVal
+    } else if (optionVal !== false) {
+      // @ts-expect-error hard to def
+      options[key] = optionVal ? deepMerge(optionVal, defaultVal) : defaultVal
     }
-  }
+  })
 
-  return deepMerge(options, antfuConfig)
+  return options
 }
 
 export * from './utils'
