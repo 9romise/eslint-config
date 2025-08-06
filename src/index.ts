@@ -7,7 +7,7 @@ import { deMorgan, nuxt } from './configs'
 import { antfuConfig } from './overrides'
 import { deepMerge } from './utils'
 
-export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+export function defineConfig(options: OptionsConfig = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const {
     deMorgan: enableDeMorgan,
     nuxt: enableNuxt = isPackageExists('nuxt'),
@@ -24,10 +24,22 @@ export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 
   }
 
   return antfu(
-    deepMerge(antfuConfig, options),
+    applyOptions(options),
     ...configs,
     ...userConfigs,
   )
+}
+
+function applyOptions(options: OptionsConfig) {
+  for (const key in antfuConfig) {
+    // @ts-expect-error type
+    if (options[key] === true) {
+      // @ts-expect-error type
+      options[key] = antfuConfig[key]
+    }
+  }
+
+  return deepMerge(options, antfuConfig)
 }
 
 export * from './utils'

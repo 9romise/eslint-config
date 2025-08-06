@@ -4,4 +4,5 @@ import { defineConfig } from './src'
 
 export default defineConfig({
   pnpm: true,
+  vue: true,
 }) as FlatConfigComposer<TypedFlatConfigItem, ConfigNames>
