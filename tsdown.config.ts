@@ -1,4 +1,3 @@
-import type { UserConfig } from 'tsdown'
 import { defineConfig } from 'tsdown'
 
 export default defineConfig([
@@ -10,4 +9,4 @@ export default defineConfig([
     outDir: 'dist/cli',
     dts: false,
   },
-]) as UserConfig
+])
