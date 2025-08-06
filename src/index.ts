@@ -4,7 +4,7 @@ import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
 import { isPackageExists } from 'local-pkg'
 import { deMorgan, nuxt } from './configs'
-import { overrides } from './overrides'
+import { antfuConfig } from './overrides'
 import { deepMerge } from './utils'
 
 export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 'files'> = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
@@ -21,18 +21,6 @@ export function defineConfig(options: OptionsConfig & Omit<TypedFlatConfigItem, 
 
   if (enableNuxt) {
     configs.push(nuxt())
-  }
-
-  const antfuConfig: OptionsConfig = {
-    stylistic: {
-      indent: 2,
-      quotes: 'single',
-      semi: false,
-      overrides: overrides.stylistic,
-    },
-    javascript: {
-      overrides: overrides.javascript,
-    },
   }
 
   return antfu(

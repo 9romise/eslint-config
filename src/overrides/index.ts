@@ -1,8 +1,9 @@
-import type { OptionsConfig, TypedFlatConfigItem } from '@antfu/eslint-config'
+import type { OptionsConfig } from '@antfu/eslint-config'
 import { javascript } from './javascript'
 import { stylistic } from './stylistic'
 
-export const overrides: Partial<Record<keyof OptionsConfig, TypedFlatConfigItem['rules']>> = {
+/// keep-sorted
+export const antfuConfig: OptionsConfig = {
   javascript,
   stylistic,
 }
