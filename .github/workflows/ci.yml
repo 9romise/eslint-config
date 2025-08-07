@@ -34,3 +34,6 @@ jobs:
 
       - name: Typecheck
         run: nr typecheck
+
+      - name: Test
+        run: nr test

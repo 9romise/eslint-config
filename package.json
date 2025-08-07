@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "2.5.1",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.14.0",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
@@ -59,15 +59,12 @@
     "@types/node": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-typegen": "catalog:dev",
+    "husky": "catalog:dev",
     "nano-staged": "catalog:dev",
-    "simple-git-hooks": "catalog:dev",
     "tsdown": "catalog:dev",
     "tsx": "catalog:dev",
     "typescript": "catalog:dev",
     "vitest": "catalog:test"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx nano-staged"
   },
   "nano-staged": {
     "*": "eslint --fix"
