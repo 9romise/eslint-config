@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.3](https://github.com/9romise/eslint-config/compare/v2.5.2...v2.5.3) (2025-08-07)
+
+
+### Bug Fixes
+
+* use `pnpm publish` ([fa61037](https://github.com/9romise/eslint-config/commit/fa610376df1aefd671869ff2521394a003d0c7da))
+
 ## [2.5.2](https://github.com/9romise/eslint-config/compare/v2.5.1...v2.5.2) (2025-08-07)
 
 
