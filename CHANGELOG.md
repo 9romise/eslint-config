@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.2](https://github.com/9romise/eslint-config/compare/v2.5.1...v2.5.2) (2025-08-07)
+
+
+### Chores
+
+* release-please-mark ([5cb3401](https://github.com/9romise/eslint-config/commit/5cb3401485d36198155fdb793fa7115f4f15f93f))
+
 ## [2.5.1](https://github.com/9romise/eslint-config/compare/v2.5.0...v2.5.1) (2025-08-06)
 
 
