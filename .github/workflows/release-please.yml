@@ -42,7 +42,7 @@ jobs:
 
       - run: npm i -g @antfu/ni
       - run: nci
-      - run: npm publish
+      - run: pnpm publish
 
       - name: Generate changelog
         run: nlx changelogithub
