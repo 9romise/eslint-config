@@ -3,7 +3,6 @@ catalogs:
     ansis: ^4.1.0
     cac: ^6.7.14
   dev:
-    '@eslint/config-inspector': ^1.2.0
     '@types/node': ^24.3.0
     eslint: ^9.33.0
     eslint-typegen: ^2.3.0
@@ -18,6 +17,7 @@ catalogs:
     local-pkg: ^1.1.2
   plugin:
     '@nuxt/eslint-plugin': '*'
+    '@unocss/eslint-plugin': '*'
     eslint-plugin-de-morgan: ^1.3.1
   test:
     vitest: ^3.2.4

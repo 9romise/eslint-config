@@ -36,14 +36,18 @@
     "lint": "eslint .",
     "check": "npm run typecheck && npm run lint",
     "prepare": "npm run typegen && npm run build",
-    "inspect": "npx @eslint/config-inspector"
+    "inspect": "npx @eslint/config-inspector --config eslint-inspector.config.ts"
   },
   "peerDependencies": {
     "@nuxt/eslint-plugin": "catalog:plugin",
+    "@unocss/eslint-plugin": "catalog:plugin",
     "eslint": ">=9.10.0"
   },
   "peerDependenciesMeta": {
     "@nuxt/eslint-plugin": {
+      "optional": true
+    },
+    "@unocss/eslint-plugin": {
       "optional": true
     }
   },
@@ -56,7 +60,6 @@
     "local-pkg": "catalog:main"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "catalog:dev",
     "@types/node": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-typegen": "catalog:dev",
