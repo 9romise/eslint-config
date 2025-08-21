@@ -18,6 +18,20 @@ export interface OptionsOverrides {
 }
 
 export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
+  /**
+   * Enable de-morgan rules.
+   *
+   * @see https://github.com/azat-io/eslint-plugin-de-morgan
+   * @default true
+   */
   deMorgan?: boolean | OptionsOverrides
+  /**
+   * Enable Nuxt.js rules.
+   *
+   * Requires installing:
+   * - [`@nuxt/eslint-plugin`](https://eslint.nuxt.com/packages/plugin)
+   *
+   * @default auto-detect based on the dependencies
+   */
   nuxt?: boolean | OptionsOverrides
 }
