@@ -15,11 +15,19 @@ export async function nuxt(options: OptionsFiles & OptionsOverrides = {}): Promi
 
   return [
     {
-      name: 'vida/nuxt/rules',
-      files,
+      name: 'vida/nuxt/setup',
+      languageOptions: {
+        globals: {
+          defineNuxtConfig: 'readonly',
+        },
+      },
       plugins: {
         nuxt: pluginNuxt,
       },
+    },
+    {
+      name: 'vida/nuxt/rules',
+      files,
       rules: {
         'nuxt/prefer-import-meta': 'error',
         'nuxt/nuxt-config-keys-order': 'error',
