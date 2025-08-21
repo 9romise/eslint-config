@@ -1,10 +1,10 @@
-import type { OptionsFiles } from '@antfu/eslint-config'
-import type { OptionsOverrides, TypedFlatConfigItem } from '../types'
+import type { OptionsConfig, TypedFlatConfigItem } from '../types'
 import { ensurePackages, GLOB_SRC, interopDefault } from '@antfu/eslint-config'
 
-export async function nuxt(options: OptionsFiles & OptionsOverrides = {}): Promise<TypedFlatConfigItem[]> {
+export async function nuxt(options: Exclude<OptionsConfig['nuxt'], boolean> = {}): Promise<TypedFlatConfigItem[]> {
   const {
     files = [GLOB_SRC],
+    overrides = {},
   } = options
 
   await ensurePackages([
@@ -31,6 +31,8 @@ export async function nuxt(options: OptionsFiles & OptionsOverrides = {}): Promi
       rules: {
         'nuxt/prefer-import-meta': 'error',
         'nuxt/nuxt-config-keys-order': 'error',
+
+        ...overrides,
       },
     },
   ]

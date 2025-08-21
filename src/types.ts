@@ -1,4 +1,4 @@
-import type { OptionsConfig as AntfuOptions } from '@antfu/eslint-config'
+import type { OptionsConfig as AntfuOptions, OptionsFiles } from '@antfu/eslint-config'
 import type { Linter } from 'eslint'
 import type { RuleOptions } from './typegen.d.ts'
 
@@ -24,7 +24,7 @@ export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
    * @see https://github.com/azat-io/eslint-plugin-de-morgan
    * @default true
    */
-  deMorgan?: boolean | OptionsOverrides
+  deMorgan?: boolean | OptionsFiles
   /**
    * Enable Nuxt.js rules.
    *
@@ -33,5 +33,5 @@ export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
    *
    * @default auto-detect based on the dependencies
    */
-  nuxt?: boolean | OptionsOverrides
+  nuxt?: boolean | OptionsOverrides & OptionsFiles
 }
