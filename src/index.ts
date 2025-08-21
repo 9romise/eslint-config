@@ -9,7 +9,7 @@ import { deepMerge } from './utils'
 
 export function defineConfig(options: OptionsConfig = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const {
-    deMorgan: enableDeMorgan,
+    deMorgan: enableDeMorgan = true,
     nuxt: enableNuxt = isPackageExists('nuxt'),
   } = options
 
