@@ -1,11 +1,12 @@
 import type { OptionsConfig, TypedFlatConfigItem } from '../types'
-import { GLOB_SRC } from '@antfu/eslint-config'
-import pluginDeMorgan from 'eslint-plugin-de-morgan'
+import { GLOB_SRC, interopDefault } from '@antfu/eslint-config'
 
-export function deMorgan(options: Exclude<OptionsConfig['deMorgan'], boolean> = {}): TypedFlatConfigItem[] {
+export async function deMorgan(options: Exclude<OptionsConfig['deMorgan'], boolean> = {}): Promise<TypedFlatConfigItem[]> {
   const {
     files = [GLOB_SRC],
   } = options
+
+  const pluginDeMorgan = await interopDefault(import('eslint-plugin-de-morgan'))
 
   return [
     {
