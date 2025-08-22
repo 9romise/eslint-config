@@ -39,8 +39,8 @@
     "inspect": "npx @eslint/config-inspector --config eslint-inspector.config.ts"
   },
   "peerDependencies": {
-    "@nuxt/eslint-plugin": "catalog:plugin",
-    "@unocss/eslint-plugin": "catalog:plugin",
+    "@nuxt/eslint-plugin": "*",
+    "@unocss/eslint-plugin": "*",
     "eslint": ">=9.10.0"
   },
   "peerDependenciesMeta": {
