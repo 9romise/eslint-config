@@ -4,24 +4,23 @@
 
 Self use eslint config, extends [antfu's config](https://github.com/antfu/eslint-config)
 
-### Difference
+## Difference
 
 - More stricter rules.
-- Support `pinia`.
 - Disable `jsx` by default.
 
-### Setup
+## Setup
 
 ```shell
-npm i -D @vida/eslint-config
+npm i -D @vida0905/eslint-config
 ```
 
 in `eslint.config.js`
 
 ```js
-import { vida } from '@vida0905/eslint-config'
+import { defineConfig } from '@vida0905/eslint-config'
 
-export default vida()
+export default defineConfig()
 ```
 
 in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.com/antfu/eslint-config?tab=readme-ov-file#vs-code-support-auto-fix-on-save)
@@ -81,3 +80,8 @@ in `.vscode/settings.json`, more info to [@antfu/eslint-config](https://github.c
   ]
 }
 ```
+
+## License
+
+- [MIT](https://github.com/9romise/eslint-config?tab=MIT-1-ov-file) License © 2024-PRESENT [Vida Xie](https://github.com/9romise)
+- @antfu/eslint-config - [MIT](https://github.com/antfu/eslint-config?tab=MIT-1-ov-file) License
