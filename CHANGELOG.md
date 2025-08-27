@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.6.0](https://github.com/9romise/eslint-config/compare/v2.5.3...v2.6.0) (2025-08-22)
+
+
+### Features
+
+* better type ([83430b5](https://github.com/9romise/eslint-config/commit/83430b56b4ed86c49b55fa20a2747716185da438))
+* update deps, lock tsdown ([28401a4](https://github.com/9romise/eslint-config/commit/28401a457f99de1721395ac0ffc663e5eb5a470c))
+
+
+### Bug Fixes
+
+* add `defineNuxtConfig` as ESLint's globals ([2f61d5b](https://github.com/9romise/eslint-config/commit/2f61d5b24fb2f3f28d6898e7898a6b4a8db2d1b3))
+* better option description ([46be2cb](https://github.com/9romise/eslint-config/commit/46be2cba8f82e3368f63a45f72481a1ba4bbb765))
+* dynamic import `eslint-plugin-de-morgan` ([d57e1d5](https://github.com/9romise/eslint-config/commit/d57e1d57d5d1382ba96c40f39339160e8859184a))
+* enable `deMorgan` default ([defcf08](https://github.com/9romise/eslint-config/commit/defcf0883f9c7b467ac6a95094c136bb8f6604ed))
+
+
+### Build Related
+
+* specific `tsconfig` in `tsdown` ([3f2c2bf](https://github.com/9romise/eslint-config/commit/3f2c2bf0d2404a2e66c7903e16ee6449caa48d3e))
+
 ## [2.5.3](https://github.com/9romise/eslint-config/compare/v2.5.2...v2.5.3) (2025-08-07)
 
 
