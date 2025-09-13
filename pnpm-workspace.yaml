@@ -3,16 +3,16 @@ catalogs:
     ansis: ^4.1.0
     cac: ^6.7.14
   dev:
-    '@types/node': ^24.3.0
-    eslint: ^9.33.0
+    '@types/node': ^24.3.3
+    eslint: ^9.35.0
     eslint-typegen: ^2.3.0
     husky: ^9.1.7
     nano-staged: ^0.8.0
-    tsdown: ^0.14.1
-    tsx: ^4.20.4
+    tsdown: ^0.15.1
+    tsx: ^4.20.5
     typescript: ^5.9.2
   main:
-    '@antfu/eslint-config': ^5.2.1
+    '@antfu/eslint-config': ^5.3.0
     eslint-flat-config-utils: ^2.1.1
     local-pkg: ^1.1.2
   plugin:
