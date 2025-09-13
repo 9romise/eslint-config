@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.1](https://github.com/9romise/eslint-config/compare/v2.6.0...v2.6.1) (2025-09-13)
+
+
+### Bug Fixes
+
+* update deps ([0aa469a](https://github.com/9romise/eslint-config/commit/0aa469a3565fef28e0af7244355c8e15c6e6f4e0))
+
 ## [2.6.0](https://github.com/9romise/eslint-config/compare/v2.5.3...v2.6.0) (2025-08-22)
 
 
