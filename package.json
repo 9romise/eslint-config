@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "2.6.1",
-  "packageManager": "pnpm@10.16.0",
+  "packageManager": "pnpm@10.17.1",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
