@@ -1,6 +1,5 @@
 catalogs:
   cli:
-    ansis: ^4.2.0
     cac: ^6.7.14
   dev:
     '@types/node': ^24.6.1

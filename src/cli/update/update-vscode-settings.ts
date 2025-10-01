@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import fsp from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
-import { green } from 'ansis'
+import { styleText } from 'node:util'
 import { vscodeSettingsString } from '../constants'
 
 export async function updateVSCodeSettings(): Promise<void> {
@@ -16,7 +16,7 @@ export async function updateVSCodeSettings(): Promise<void> {
 
   if (!fs.existsSync(settingsPath)) {
     await fsp.writeFile(settingsPath, `{${vscodeSettingsString}}\n`, 'utf-8')
-    console.log(green`Created .vscode/settings.json`)
+    console.log(styleText('green', 'Created .vscode/settings.json'))
   } else {
     let settingsContent = await fsp.readFile(settingsPath, 'utf8')
 
@@ -25,6 +25,6 @@ export async function updateVSCodeSettings(): Promise<void> {
     settingsContent += `${vscodeSettingsString}}\n`
 
     await fsp.writeFile(settingsPath, settingsContent, 'utf-8')
-    console.log(green`Updated .vscode/settings.json`)
+    console.log(styleText('green', 'Updated .vscode/settings.json'))
   }
 }
