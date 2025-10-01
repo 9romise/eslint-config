@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.7.0](https://github.com/9romise/eslint-config/compare/v2.6.1...v2.7.0) (2025-10-01)
+
+
+### Features
+
+* replace `ansis` with built-in `styleText` ([3d0766c](https://github.com/9romise/eslint-config/commit/3d0766cd69b7041f5553ecda28e9cce37c33ef6d))
+
+
+### Bug Fixes
+
+* update deps ([1178eb0](https://github.com/9romise/eslint-config/commit/1178eb07995534b241ca69f94dddfea85e0dba9a))
+
 ## [2.6.1](https://github.com/9romise/eslint-config/compare/v2.6.0...v2.6.1) (2025-09-13)
 
 
