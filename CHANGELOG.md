@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.1](https://github.com/9romise/eslint-config/compare/v2.7.0...v2.7.1) (2025-10-10)
+
+
+### Bug Fixes
+
+* apply options correctly ([ffe6ee2](https://github.com/9romise/eslint-config/commit/ffe6ee2b254fba99ef06894638adf268f91ac528))
+
 ## [2.7.0](https://github.com/9romise/eslint-config/compare/v2.6.1...v2.7.0) (2025-10-01)
 
 
