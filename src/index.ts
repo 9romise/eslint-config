@@ -41,7 +41,7 @@ export function applyOptions(options: OptionsConfig): OptionsConfig {
       options[key] = defaultVal
     } else if (optionVal !== false) {
       // @ts-expect-error hard to def
-      options[key] = optionVal ? deepMerge(optionVal, defaultVal) : defaultVal
+      options[key] = optionVal ? deepMerge(defaultVal, optionVal) : defaultVal
     }
   })
 

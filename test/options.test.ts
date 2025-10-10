@@ -1,3 +1,4 @@
+import type { StylisticConfig } from '../src'
 import { expect, it } from 'vitest'
 import { applyOptions } from '../src'
 
@@ -23,4 +24,15 @@ it('default options with false', () => {
   expect(options).toHaveProperty('javascript')
   expect(options).toHaveProperty('stylistic')
   expect(options).not.toHaveProperty(['vue', 'overrides'])
+})
+
+it('override', () => {
+  const options = applyOptions({
+    stylistic: {
+      semi: true,
+    },
+  })
+
+  expect(options.stylistic).toHaveProperty('semi')
+  expect((options.stylistic as StylisticConfig).semi).toBe(true)
 })
