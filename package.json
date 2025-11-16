@@ -18,11 +18,11 @@
     "eslint-config"
   ],
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.mjs"
   },
-  "main": "./dits/index.js",
-  "types": "./dist/index.d.ts",
-  "bin": "./bin/index.js",
+  "main": "./dits/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": "./bin/index.mjs",
   "files": [
     "bin",
     "dist"

@@ -6,12 +6,10 @@ export default defineConfig([
     dts: {
       tsconfig: 'tsconfig.app.json',
     },
-    fixedExtension: false,
   },
   {
     entry: 'src/cli/index.ts',
     outDir: 'dist/cli',
     dts: false,
-    fixedExtension: false,
   },
 ])
