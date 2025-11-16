@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.0](https://github.com/9romise/eslint-config/compare/v2.7.1...v2.8.0) (2025-11-16)
+
+
+### Features
+
+* fix the extension in dist ([179393e](https://github.com/9romise/eslint-config/commit/179393ef208fa9fdeaebcd0ab57ae5f6f948ee44))
+
 ## [2.7.1](https://github.com/9romise/eslint-config/compare/v2.7.0...v2.7.1) (2025-10-10)
 
 
