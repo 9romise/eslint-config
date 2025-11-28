@@ -6,8 +6,8 @@ catalogs:
     eslint: ^9.39.1
     eslint-typegen: ^2.3.0
     husky: ^9.1.7
-    nano-staged: ^0.8.0
-    tsdown: ^0.16.4
+    nano-staged: ^0.9.0
+    tsdown: ^0.16.8
     tsx: ^4.20.6
     typescript: ^5.9.3
   main:
@@ -17,4 +17,4 @@ catalogs:
   plugin:
     eslint-plugin-de-morgan: ^2.0.0
   test:
-    vitest: ^4.0.9
+    vitest: ^4.0.14
