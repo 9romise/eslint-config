@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.0](https://github.com/9romise/eslint-config/compare/v2.7.1...v2.8.0) (2025-11-28)
+
+
+### Features
+
+* fix the extension in dist ([179393e](https://github.com/9romise/eslint-config/commit/179393ef208fa9fdeaebcd0ab57ae5f6f948ee44))
+
+
+### Bug Fixes
+
+* enable `prefer-use-template-ref` ([bc3c6a1](https://github.com/9romise/eslint-config/commit/bc3c6a1a353bc5aedaabc05216fd71d5c3585876))
+
 ## [2.7.1](https://github.com/9romise/eslint-config/compare/v2.7.0...v2.7.1) (2025-10-10)
 
 
