@@ -5,5 +5,6 @@ export const vue: OptionsConfig['vue'] = {
     'vue/max-attributes-per-line': ['error', {
       multiline: 1,
     }],
+    'vue/prefer-use-template-ref': ['error'],
   },
 }
