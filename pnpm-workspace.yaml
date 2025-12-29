@@ -1,20 +1,24 @@
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
 catalogs:
   cli:
     cac: ^6.7.14
   dev:
-    '@types/node': ^24.10.1
-    eslint: ^9.39.1
+    '@types/node': ^25.0.3
+    eslint: ^9.39.2
     eslint-typegen: ^2.3.0
     husky: ^9.1.7
     nano-staged: ^0.9.0
-    tsdown: ^0.16.8
-    tsx: ^4.20.6
+    tsdown: ^0.18.3
+    tsx: ^4.21.0
     typescript: ^5.9.3
   main:
-    '@antfu/eslint-config': ^6.2.0
+    '@antfu/eslint-config': ^6.7.3
     eslint-flat-config-utils: ^2.1.4
     local-pkg: ^1.1.2
   plugin:
     eslint-plugin-de-morgan: ^2.0.0
   test:
-    vitest: ^4.0.14
+    vitest: ^4.0.16
