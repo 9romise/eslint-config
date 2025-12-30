@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.8.0](https://github.com/9romise/eslint-config/compare/v2.7.1...v2.8.0) (2025-12-30)
+
+
+### Features
+
+* fix the extension in dist ([179393e](https://github.com/9romise/eslint-config/commit/179393ef208fa9fdeaebcd0ab57ae5f6f948ee44))
+* **typescript:** enable `ts/array-type` ([88b5409](https://github.com/9romise/eslint-config/commit/88b5409596dde7591220d37664e4aeef313ebd5f))
+
+
+### Bug Fixes
+
+* correct overrides ([8f7ead7](https://github.com/9romise/eslint-config/commit/8f7ead797171f8f8b477ce33b1ab11c4bc053593))
+* enable `prefer-use-template-ref` ([bc3c6a1](https://github.com/9romise/eslint-config/commit/bc3c6a1a353bc5aedaabc05216fd71d5c3585876))
+* update deps ([cbc890c](https://github.com/9romise/eslint-config/commit/cbc890c8bf174947fb67ea86c24330f1136217e1))
+* **vue:** check if vue packages exist ([ce30474](https://github.com/9romise/eslint-config/commit/ce30474c54293ae5bbcaab9499b291c4e982c969))
+
 ## [2.7.1](https://github.com/9romise/eslint-config/compare/v2.7.0...v2.7.1) (2025-10-10)
 
 
