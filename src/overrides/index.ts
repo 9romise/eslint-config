@@ -5,7 +5,7 @@ import { typescript } from './typescript'
 import { vue } from './vue'
 
 /// keep-sorted
-export const antfuConfig: OptionsConfig = Object.freeze({
+export const antfuOverrides: OptionsConfig = Object.freeze({
   javascript,
   stylistic,
   typescript,

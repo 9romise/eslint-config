@@ -4,13 +4,25 @@ import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
 import { isPackageExists } from 'local-pkg'
 import { deMorgan, nuxt } from './configs'
-import { antfuConfig } from './overrides'
+import { antfuOverrides } from './overrides'
 import { deepMerge } from './utils'
 
-export function defineConfig(options: OptionsConfig = {}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+const VuePackages = [
+  'vue',
+  'nuxt',
+  'vitepress',
+  '@slidev/cli',
+]
+
+export function defineConfig(options: OptionsConfig = {
+  deMorgan: true,
+  nuxt: isPackageExists('nuxt'),
+  vue: VuePackages.some((i) => isPackageExists(i)),
+  typescript: isPackageExists('typescript'),
+}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   const {
-    deMorgan: enableDeMorgan = true,
-    nuxt: enableNuxt = isPackageExists('nuxt'),
+    deMorgan: enableDeMorgan,
+    nuxt: enableNuxt,
   } = options
 
   const configs: Awaitable<TypedFlatConfigItem[]>[] = []
@@ -31,11 +43,11 @@ export function defineConfig(options: OptionsConfig = {}, ...userConfigs: Awaita
 }
 
 export function applyOptions(options: OptionsConfig): OptionsConfig {
-  Object.keys(antfuConfig).forEach((key) => {
+  for (const key in antfuOverrides) {
     // @ts-expect-error hard to def
     const optionVal = options[key]
     // @ts-expect-error hard to def
-    const defaultVal = antfuConfig[key]
+    const defaultVal = antfuOverrides[key]
     if (optionVal === true) {
       // @ts-expect-error hard to def
       options[key] = defaultVal
@@ -43,7 +55,7 @@ export function applyOptions(options: OptionsConfig): OptionsConfig {
       // @ts-expect-error hard to def
       options[key] = optionVal ? deepMerge(defaultVal, optionVal) : defaultVal
     }
-  })
+  }
 
   return options
 }
