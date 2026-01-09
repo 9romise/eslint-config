@@ -61,6 +61,7 @@
   },
   "devDependencies": {
     "@types/node": "catalog:dev",
+    "es-toolkit": "catalog:inline",
     "eslint": "catalog:dev",
     "eslint-typegen": "catalog:dev",
     "husky": "catalog:dev",

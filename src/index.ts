@@ -2,10 +2,10 @@ import type { Awaitable, ConfigNames, TypedFlatConfigItem } from '@antfu/eslint-
 import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
+import { toMerged } from 'es-toolkit'
 import { isPackageExists } from 'local-pkg'
 import { deMorgan, e18e, nuxt } from './configs'
 import { antfuOverrides } from './overrides'
-import { deepMerge } from './utils'
 
 const VuePackages = [
   'vue',
@@ -24,10 +24,10 @@ const defaultOptions: OptionsConfig = {
 }
 
 export function defineConfig(
-  options?: OptionsConfig,
+  options: OptionsConfig = {},
   ...userConfigs: Awaitable<TypedFlatConfigItem>[]
 ): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
-  options = deepMerge(defaultOptions, options)
+  options = toMerged(defaultOptions, options)
   // @keep-sorted
   const {
     deMorgan: enableDeMorgan,
@@ -65,13 +65,12 @@ export function applyOptions(options: OptionsConfig): OptionsConfig {
       options[key] = defaultVal
     } else if (optionVal !== false) {
       // @ts-expect-error hard to def
-      options[key] = optionVal ? deepMerge(defaultVal, optionVal) : defaultVal
+      options[key] = optionVal ? toMerged(defaultVal, optionVal) : defaultVal
     }
   }
 
   return options
 }
 
-export * from './utils'
 export * from '@antfu/eslint-config'
 export default defineConfig
