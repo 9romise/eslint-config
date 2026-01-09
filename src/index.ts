@@ -3,7 +3,7 @@ import type { FlatConfigComposer } from 'eslint-flat-config-utils'
 import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
 import { isPackageExists } from 'local-pkg'
-import { deMorgan, nuxt } from './configs'
+import { deMorgan, e18e, nuxt } from './configs'
 import { antfuOverrides } from './overrides'
 import { deepMerge } from './utils'
 
@@ -14,14 +14,24 @@ const VuePackages = [
   '@slidev/cli',
 ]
 
-export function defineConfig(options: OptionsConfig = {
+// @keep-sorted
+const defaultOptions: OptionsConfig = {
   deMorgan: true,
+  e18e: true,
   nuxt: isPackageExists('nuxt'),
-  vue: VuePackages.some((i) => isPackageExists(i)),
   typescript: isPackageExists('typescript'),
-}, ...userConfigs: Awaitable<TypedFlatConfigItem>[]): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+  vue: VuePackages.some((i) => isPackageExists(i)),
+}
+
+export function defineConfig(
+  options?: OptionsConfig,
+  ...userConfigs: Awaitable<TypedFlatConfigItem>[]
+): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+  options = deepMerge(defaultOptions, options)
+  // @keep-sorted
   const {
     deMorgan: enableDeMorgan,
+    e18e: enableE18e,
     nuxt: enableNuxt,
   } = options
 
@@ -30,7 +40,9 @@ export function defineConfig(options: OptionsConfig = {
   if (enableDeMorgan) {
     configs.push(deMorgan())
   }
-
+  if (enableE18e) {
+    configs.push(e18e())
+  }
   if (enableNuxt) {
     configs.push(nuxt())
   }

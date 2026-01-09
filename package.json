@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "catalog:main",
+    "@e18e/eslint-plugin": "catalog:plugin",
     "cac": "catalog:cli",
     "eslint-flat-config-utils": "catalog:main",
     "eslint-plugin-de-morgan": "catalog:plugin",

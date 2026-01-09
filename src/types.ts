@@ -26,6 +26,13 @@ export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
    */
   deMorgan?: boolean | OptionsFiles
   /**
+   * Enable e18e rules.
+   *
+   * @see https://github.com/e18e/eslint-plugin
+   * @default true
+   */
+  e18e?: boolean | OptionsOverrides & OptionsFiles
+  /**
    * Enable Nuxt.js rules.
    *
    * Requires installing:
