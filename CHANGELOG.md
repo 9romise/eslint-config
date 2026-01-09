@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.9.0](https://github.com/9romise/eslint-config/compare/v2.8.0...v2.9.0) (2026-01-09)
+
+
+### Features
+
+* introduce `@e18e/eslint-plugin` ([cda19d9](https://github.com/9romise/eslint-config/commit/cda19d99a2ce535f783d0cb91ffd0ebb9afd0f67))
+
+
+### Chores
+
+* introduce `es-toolkit` as inline dependency ([749cede](https://github.com/9romise/eslint-config/commit/749cedeb38e2d5196fd952d50506255398a306e6))
+
 ## [2.8.0](https://github.com/9romise/eslint-config/compare/v2.7.1...v2.8.0) (2025-12-30)
 
 
