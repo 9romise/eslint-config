@@ -6,6 +6,7 @@ export default defineConfig([
     dts: {
       tsconfig: 'tsconfig.app.json',
     },
+    exports: true,
   },
   {
     entry: 'src/cli/index.ts',
