@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.9.1](https://github.com/9romise/eslint-config/compare/v2.9.0...v2.9.1) (2026-01-10)
+
+
+### Build Related
+
+* enable tsdown's `exports` ([31f723e](https://github.com/9romise/eslint-config/commit/31f723e927df7211266e66e0d2b4d4a4063a002c))
+
 ## [2.9.0](https://github.com/9romise/eslint-config/compare/v2.8.0...v2.9.0) (2026-01-09)
 
 
