@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.10.0](https://github.com/9romise/eslint-config/compare/v2.9.0...v2.10.0) (2026-01-17)
+
+
+### Features
+
+* update deps ([681c518](https://github.com/9romise/eslint-config/commit/681c518eda42705358eee9f3266334a9b209f2c6))
+
+
+### Build Related
+
+* enable tsdown's `exports` ([31f723e](https://github.com/9romise/eslint-config/commit/31f723e927df7211266e66e0d2b4d4a4063a002c))
+
 ## [2.9.0](https://github.com/9romise/eslint-config/compare/v2.8.0...v2.9.0) (2026-01-09)
 
 
