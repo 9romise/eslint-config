@@ -6,7 +6,9 @@ export default defineConfig([
     dts: {
       tsconfig: 'tsconfig.app.json',
     },
+    minify: 'dce-only',
     exports: true,
+    inlineOnly: ['es-toolkit'],
   },
   {
     entry: 'src/cli/index.ts',
