@@ -6,11 +6,13 @@ catalogs:
   cli:
     cac: ^6.7.14
   dev:
+    '@arethetypeswrong/core': ^0.18.2
     '@types/node': ^25.3.0
     eslint: ^10.0.1
     eslint-typegen: ^2.3.1
     husky: ^9.1.7
     nano-staged: ^0.9.0
+    publint: ^0.3.17
     tsdown: ^0.20.3
     tsx: ^4.21.0
     typescript: ^5.9.3

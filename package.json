@@ -61,12 +61,14 @@
     "local-pkg": "catalog:main"
   },
   "devDependencies": {
+    "@arethetypeswrong/core": "catalog:dev",
     "@types/node": "catalog:dev",
     "es-toolkit": "catalog:inline",
     "eslint": "catalog:dev",
     "eslint-typegen": "catalog:dev",
     "husky": "catalog:dev",
     "nano-staged": "catalog:dev",
+    "publint": "catalog:dev",
     "tsdown": "catalog:dev",
     "tsx": "catalog:dev",
     "typescript": "catalog:dev",

@@ -9,6 +9,10 @@ export default defineConfig([
     minify: 'dce-only',
     exports: true,
     inlineOnly: ['es-toolkit'],
+    attw: {
+      profile: 'esm-only',
+    },
+    publint: true,
   },
   {
     entry: 'src/cli/index.ts',
