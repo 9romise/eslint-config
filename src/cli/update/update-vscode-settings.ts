@@ -5,6 +5,8 @@ import process from 'node:process'
 import { styleText } from 'node:util'
 import { vscodeSettingsString } from '../constants'
 
+const CLOSING_BRACE_REGEX = /\s*\}$/
+
 export async function updateVSCodeSettings(): Promise<void> {
   const cwd = process.cwd()
 
@@ -20,7 +22,7 @@ export async function updateVSCodeSettings(): Promise<void> {
   } else {
     let settingsContent = await fsp.readFile(settingsPath, 'utf8')
 
-    settingsContent = settingsContent.trim().replace(/\s*\}$/, '')
+    settingsContent = settingsContent.trim().replace(CLOSING_BRACE_REGEX, '')
     settingsContent += settingsContent.endsWith(',') || settingsContent.endsWith('{') ? '' : ','
     settingsContent += `${vscodeSettingsString}}\n`
 
