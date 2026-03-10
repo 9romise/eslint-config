@@ -19,13 +19,6 @@ export interface OptionsOverrides {
 
 export type OptionsConfig = Omit<AntfuOptions, 'overrides'> & {
   /**
-   * Enable de-morgan rules.
-   *
-   * @see https://github.com/azat-io/eslint-plugin-de-morgan
-   * @default true
-   */
-  deMorgan?: boolean | OptionsFiles
-  /**
    * Enable e18e rules.
    *
    * @see https://github.com/e18e/eslint-plugin

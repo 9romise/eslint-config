@@ -16,7 +16,6 @@ const VuePackages = [
 
 // @keep-sorted
 const defaultOptions: OptionsConfig = {
-  deMorgan: true,
   e18e: true,
   nuxt: isPackageExists('nuxt'),
   typescript: isPackageExists('typescript'),
@@ -30,16 +29,15 @@ export function defineConfig(
   options = toMerged(defaultOptions, options)
   // @keep-sorted
   const {
-    deMorgan: enableDeMorgan,
     e18e: enableE18e,
     nuxt: enableNuxt,
   } = options
 
   const configs: Awaitable<TypedFlatConfigItem[]>[] = []
 
-  if (enableDeMorgan) {
-    configs.push(deMorgan())
-  }
+  configs.push(
+    deMorgan(),
+  )
   if (enableE18e) {
     configs.push(e18e())
   }
