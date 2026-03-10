@@ -18,7 +18,7 @@ const VuePackages = [
 const defaultOptions: OptionsConfig = {
   e18e: true,
   nuxt: isPackageExists('nuxt'),
-  typescript: isPackageExists('typescript'),
+  typescript: isPackageExists('typescript') || isPackageExists('@typescript/native-preview'),
   vue: VuePackages.some((i) => isPackageExists(i)),
 }
 
