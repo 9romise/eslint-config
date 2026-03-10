@@ -8,7 +8,9 @@ export default defineConfig([
     },
     minify: 'dce-only',
     exports: true,
-    inlineOnly: ['es-toolkit'],
+    deps: {
+      onlyAllowBundle: ['es-toolkit'],
+    },
     attw: {
       profile: 'esm-only',
     },

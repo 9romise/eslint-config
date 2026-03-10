@@ -2,7 +2,7 @@
   "name": "@vida0905/eslint-config",
   "type": "module",
   "version": "2.10.1",
-  "packageManager": "pnpm@10.30.1",
+  "packageManager": "pnpm@10.32.0",
   "description": "Vida Xie's ESLint Config",
   "author": "Vida Xie <vida_2020@163.com> (https://github.com/9romise/)",
   "license": "MIT",
@@ -54,7 +54,6 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "catalog:main",
-    "cac": "catalog:cli",
     "eslint-flat-config-utils": "catalog:main",
     "eslint-plugin-de-morgan": "catalog:plugin",
     "local-pkg": "catalog:main"
@@ -75,5 +74,8 @@
   },
   "nano-staged": {
     "*": "eslint --fix"
+  },
+  "inlinedDependencies": {
+    "es-toolkit": "1.45.1"
   }
 }
