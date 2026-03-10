@@ -14,9 +14,4 @@ export default defineConfig([
     },
     publint: true,
   },
-  {
-    entry: 'src/cli/index.ts',
-    outDir: 'dist/cli',
-    dts: false,
-  },
 ])

@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-import '../dist/cli/index.mjs'
+import '@antfu/eslint-config/cli.mjs'
