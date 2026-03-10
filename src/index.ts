@@ -4,7 +4,7 @@ import type { OptionsConfig } from './types'
 import antfu from '@antfu/eslint-config'
 import { toMerged } from 'es-toolkit'
 import { isPackageExists } from 'local-pkg'
-import { deMorgan, e18e, nuxt } from './configs'
+import { deMorgan, nuxt } from './configs'
 import { antfuOverrides } from './overrides'
 
 const VuePackages = [
@@ -16,7 +16,6 @@ const VuePackages = [
 
 // @keep-sorted
 const defaultOptions: OptionsConfig = {
-  e18e: true,
   nuxt: isPackageExists('nuxt'),
   typescript: isPackageExists('typescript') || isPackageExists('@typescript/native-preview'),
   vue: VuePackages.some((i) => isPackageExists(i)),
@@ -29,7 +28,6 @@ export function defineConfig(
   options = toMerged(defaultOptions, options)
   // @keep-sorted
   const {
-    e18e: enableE18e,
     nuxt: enableNuxt,
   } = options
 
@@ -38,9 +36,6 @@ export function defineConfig(
   configs.push(
     deMorgan(),
   )
-  if (enableE18e) {
-    configs.push(e18e())
-  }
   if (enableNuxt) {
     configs.push(nuxt())
   }

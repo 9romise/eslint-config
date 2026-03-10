@@ -23,7 +23,6 @@ catalogs:
     eslint-flat-config-utils: ^3.0.1
     local-pkg: ^1.1.2
   plugin:
-    '@e18e/eslint-plugin': ^0.2.0
     eslint-plugin-de-morgan: ^2.0.0
   test:
     vitest: ^4.0.18
