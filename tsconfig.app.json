@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
+    "tsBuildInfoFile": "./node_modules/.app.tsbuildinfo",
     "isolatedDeclarations": true
   },
   "include": ["src/**/*.ts"]
