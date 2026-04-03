@@ -10,16 +10,16 @@ catalogs:
     husky: ^9.1.7
     nano-staged: ^0.9.0
     publint: ^0.3.18
-    tsdown: ^0.21.5
+    tsdown: ^0.21.7
     tsx: ^4.21.0
     typescript: ^6.0.2
   inline:
     es-toolkit: ^1.45.1
   main:
-    '@antfu/eslint-config': ^7.7.3
-    eslint-flat-config-utils: ^3.0.2
+    '@antfu/eslint-config': ^8.0.0
+    eslint-flat-config-utils: ^3.1.0
     local-pkg: ^1.1.2
   plugin:
     eslint-plugin-de-morgan: ^2.1.1
   test:
-    vitest: ^4.1.1
+    vitest: ^4.1.2
