@@ -1,32 +1,30 @@
 minimumReleaseAgeExclude:
-  - '@types/node@25.9.0'
-  - tsx@4.22.2
-
+  - '@types/node@26.1.0'
 shellEmulator: true
 trustPolicy: no-downgrade
 
 catalogs:
   dev:
-    '@arethetypeswrong/core': ^0.18.2
-    '@types/node': ^25.9.0
-    eslint: ^10.4.0
+    '@arethetypeswrong/core': ^0.18.4
+    '@types/node': ^26.1.0
+    eslint: ^10.6.0
     eslint-typegen: ^2.3.1
     husky: ^9.1.7
     nano-staged: ^1.0.2
     publint: ^0.3.21
-    tsdown: ^0.22.0
-    tsx: ^4.22.2
+    tsdown: ^0.22.3
+    tsx: ^4.22.4
     typescript: ^6.0.3
   inline:
-    es-toolkit: ^1.46.1
+    es-toolkit: ^1.49.0
   main:
-    '@antfu/eslint-config': ^9.0.0
+    '@antfu/eslint-config': ^9.1.0
     eslint-flat-config-utils: ^3.2.0
-    local-pkg: ^1.1.2
+    local-pkg: ^1.2.1
   plugin:
     eslint-plugin-de-morgan: ^2.1.2
   test:
-    vitest: ^4.1.6
+    vitest: ^4.1.9
 
 allowBuilds:
   esbuild: false
